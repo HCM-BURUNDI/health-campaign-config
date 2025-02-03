@@ -1,0 +1,260 @@
+{
+  "_comment": "Holds mapping for each role with and its associated dashboards",
+  "roles": [
+    {
+      "_comment": "This role is for national level supervisor who can access National health dashboards",
+      "roleId": 8,
+      "roleName": "NationalSupervisor",
+      "isSuper": "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "National Health Dashboard",
+          "id": "national-health-dashboard"
+        },
+        {
+          "name": "Provincial Health Dashboard",
+          "id": "provincial-health-dashboard"
+        },
+        {
+          "name": "District Health Dashboard",
+          "id": "district-health-dashboard"
+        }
+      ]
+    },
+    {
+      "_comment": "This role is for provincial level supervisor who can access Provincial health dashboards",
+      "roleId": 9,
+      "roleName": "ProvincialSupervisor",
+      "isSuper": "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "Provincial Health Dashboard",
+          "id": "provincial-health-dashboard"
+        },
+        {
+          "name": "District Health Dashboard",
+          "id": "district-health-dashboard"
+        }
+      ]
+    },
+    {
+      "_comment": "This role is for district level supervisor who can access District health dashboards",
+      "roleId": 10,
+      "roleName": "DistrictSupervisor",
+      "isSuper": "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "District Health Dashboard",
+          "id": "district-health-dashboard"
+        }
+      ]
+    },
+    {
+      "_comment": "This role is for national level supervisor who can access National health dashboards",
+      "roleId": 11,
+      "roleName": "NationalSupervisor",
+      "isSuper": "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "National Health Dashboard",
+          "id": "national-health-dashboard-llin"
+        },
+        {
+          "name": "Provincial Health Dashboard",
+          "id": "provincial-health-dashboard-llin"
+        },
+        {
+          "name": "District Health Dashboard",
+          "id": "district-health-dashboard-llin"
+        }
+      ]
+    },
+    {
+      "_comment": "This role is for provincial level supervisor who can access Provincial health dashboards",
+      "roleId": 12,
+      "roleName": "ProvincialSupervisor",
+      "isSuper": "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "Provincial Health Dashboard",
+          "id": "provincial-health-dashboard-llin"
+        },
+        {
+          "name": "District Health Dashboard",
+          "id": "district-health-dashboard-llin"
+        }
+      ]
+    },
+    {
+      "_comment": "This role is for district level supervisor who can access District health dashboards",
+      "roleId": 13,
+      "roleName": "DistrictSupervisor",
+      "isSuper": "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "District Health Dashboard",
+          "id": "district-health-dashboard-llin"
+        }
+      ]
+    },
+    {
+      "_comment": "This role is for national level supervisor who can access National health dashboards",
+      "roleId": 14,
+      "roleName": "NationalSupervisor",
+      "isSuper": "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "National Health Dashboard",
+          "id": "national-health-dashboard-burundi"
+        },
+        {
+          "name": "Provincial Health Dashboard",
+          "id": "provincial-health-dashboard-burundi"
+        },
+        {
+          "name": "District Health Dashboard",
+          "id": "district-health-dashboard-burundi"
+        }
+      ]
+    },
+    {
+      "_comment": "This role is for provincial level supervisor who can access Provincial health dashboards",
+      "roleId": 15,
+      "roleName": "ProvincialSupervisor",
+      "isSuper": "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "Provincial Health Dashboard",
+          "id": "provincial-health-dashboard-burundi"
+        },
+        {
+          "name": "District Health Dashboard",
+          "id": "district-health-dashboard-burundi"
+        }
+      ]
+    },
+    {
+      "_comment": "This role is for district level supervisor who can access District health dashboards",
+      "roleId": 16,
+      "roleName": "DistrictSupervisor",
+      "isSuper": "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "District Health Dashboard",
+          "id": "district-health-dashboard-burundi"
+        }
+      ]
+    },
+    {
+      "_comment": "This role is for national level supervisor who can access National health dashboards",
+      "roleId": 17,
+      "roleName": "NationalSupervisor",
+      "isSuper": "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "National Health Dashboard",
+          "id": "national-health-dashboard-dbd45c31-de9e-4e62-a9b6-abb818928fd2"
+        },
+        {
+          "name": "Provincial Health Dashboard",
+          "id": "provincial-health-dashboard-dbd45c31-de9e-4e62-a9b6-abb818928fd2"
+        },
+        {
+          "name": "District Health Dashboard",
+          "id": "district-health-dashboard-dbd45c31-de9e-4e62-a9b6-abb818928fd2"
+        }
+      ]
+    },
+    {
+      "_comment": "This role is for provincial level supervisor who can access Provincial health dashboards",
+      "roleId": 18,
+      "roleName": "ProvincialSupervisor",
+      "isSuper": "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "Provincial Health Dashboard",
+          "id": "provincial-health-dashboard-dbd45c31-de9e-4e62-a9b6-abb818928fd2"
+        },
+        {
+          "name": "District Health Dashboard",
+          "id": "district-health-dashboard-dbd45c31-de9e-4e62-a9b6-abb818928fd2"
+        }
+      ]
+    },
+    {
+      "_comment": "This role is for district level supervisor who can access District health dashboards",
+      "roleId": 19,
+      "roleName": "DistrictSupervisor",
+      "isSuper": "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "District Health Dashboard",
+          "id": "district-health-dashboard-dbd45c31-de9e-4e62-a9b6-abb818928fd2"
+        }
+      ]
+    },
+    {
+      "_comment": "This role is for national level supervisor who can access National health dashboards",
+      "roleId": 20,
+      "roleName": "NationalSupervisor",
+      "isSuper": "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "National Health Dashboard",
+          "id": "national-health-dashboard-carbo-delgado"
+        },
+        {
+          "name": "Provincial Health Dashboard",
+          "id": "provincial-health-dashboard-carbo-delgado"
+        },
+        {
+          "name": "District Health Dashboard",
+          "id": "district-health-dashboard-carbo-delgado"
+        }
+      ]
+    },
+    {
+      "_comment": "This role is for provincial level supervisor who can access Provincial health dashboards",
+      "roleId": 21,
+      "roleName": "ProvincialSupervisor",
+      "isSuper": "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "Provincial Health Dashboard",
+          "id": "provincial-health-dashboard-carbo-delgado"
+        },
+        {
+          "name": "District Health Dashboard",
+          "id": "district-health-dashboard-carbo-delgado"
+        }
+      ]
+    },
+    {
+      "_comment": "This role is for district level supervisor who can access District health dashboards",
+      "roleId": 22,
+      "roleName": "DistrictSupervisor",
+      "isSuper": "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "District Health Dashboard",
+          "id": "district-health-dashboard-carbo-delgado"
+        }
+      ]
+    }
+  ]
+}
