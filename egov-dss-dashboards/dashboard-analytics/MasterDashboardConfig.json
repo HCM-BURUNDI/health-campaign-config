@@ -7372,6 +7372,49 @@
           "name": "DSS_HEALTH_REGISTRATION",
           "vizArray": [
             {
+              "id": 217,
+              "name": "DSS_HEALTH_ACTUAL_VS_PLANNED_LINE_GRAPH",
+              "label": "DSS_HEALTH_ACTUAL_VS_PLANNED_LINE_GRAPH",
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "actualVsPlannedHouseholdLineGraphProvinceBurundi",
+                  "name": "DSS_HEALTH_ACTUAL_VS_PLANNED_HOUSEHOLD_LINE_GRAPH_PROVINCE_BURUNDI",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "tabName": "Household",
+                  "headers": []
+                },
+                {
+                  "id": "actualVsPlannedPopulationLineGraphProvinceBurundi",
+                  "name": "DSS_HEALTH_ACTUAL_VS_PLANNED_POPULATION_LINE_GRAPH_PROVINCE_BURUNDI",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "tabName": "Population",
+                  "headers": []
+                },
+                {
+                  "id": "actualVsPlannedBednetsLineGraphProvinceBurundi",
+                  "name": "DSS_HEALTH_ACTUAL_VS_PLANNED_BEDNETS_LINE_GRAPH_PROVINCE_BURUNDI",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "tabName": "Bednets",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "name": "DSS_HEALTH_REGISTRATION",
+          "vizArray": [
+            {
               "id": 3075,
               "name": "DSS_HEALTH_HOUSEHOLDS_COVERAGE_HEATMAP_PROVINCE",
               "label": "DSS_HEALTH_HOUSEHOLDS_COVERAGE_HEATMAP_PROVINCE",
@@ -7881,15 +7924,6 @@
               "isCollapsible": false,
               "charts": [
                 {
-                  "id": "complaintsByStatusBreakdownProvincePercentBurundi",
-                  "name": "DSS_HEALTH_COMPLAINTS_STATUS_BREAKDOWN_PROVINCE_PERCENT_BURUNDI",
-                  "code": "",
-                  "chartType": "bar",
-                  "filter": "",
-                  "headers": [],
-                  "tabName": "PERCENT"
-                },
-                {
                   "id": "complaintsByStatusBreakdownProvinceBurundi",
                   "name": "DSS_HEALTH_COMPLAINTS_STATUS_BREAKDOWN_PROVINCE_BURUNDI",
                   "code": "",
@@ -7908,15 +7942,6 @@
               "noUnit": true,
               "isCollapsible": false,
               "charts": [
-                {
-                  "id": "complaintsByTypeBreakdownProvincialPercentBurundi",
-                  "name": "DSS_HEALTH_COMPLAINTS_TYPE_BREAKDOWN_PROVINCIAL_PERCENT_BURUNDI",
-                  "code": "",
-                  "chartType": "bar",
-                  "filter": "",
-                  "headers": [],
-                  "tabName": "PERCENT"
-                },
                 {
                   "id": "complaintsByTypeBreakdownProvincialBurundi",
                   "name": "DSS_HEALTH_COMPLAINTS_TYPE_BREAKDOWN_PROVINCIAL_BURUNDI",
