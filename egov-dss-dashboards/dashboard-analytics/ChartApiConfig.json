@@ -38479,7 +38479,7 @@
     "computedFields": [
       {
         "postAggregationTheory": "",
-        "actionName": "PercentageComputedField",
+        "actionName": "StackPercentageComputedField",
         "fields": [
           "Other",
           "Total Complaints"
@@ -38488,7 +38488,7 @@
       },
       {
         "postAggregationTheory": "",
-        "actionName": "PercentageComputedField",
+        "actionName": "StackPercentageComputedField",
         "fields": [
           "PerformanceIssue",
           "Total Complaints"
@@ -38506,7 +38506,7 @@
       },
       {
         "postAggregationTheory": "",
-        "actionName": "PercentageComputedField",
+        "actionName": "StackPercentageComputedField",
         "fields": [
           "DataIssues",
           "Total Complaints"
@@ -38515,7 +38515,7 @@
       },
       {
         "postAggregationTheory": "",
-        "actionName": "PercentageComputedField",
+        "actionName": "StackPercentageComputedField",
         "fields": [
           "TechnicalIssues",
           "Total Complaints"
@@ -38524,7 +38524,7 @@
       },
       {
         "postAggregationTheory": "",
-        "actionName": "PercentageComputedField",
+        "actionName": "StackPercentageComputedField",
         "fields": [
           "UserAccountIssues",
           "Total Complaints"
@@ -38533,7 +38533,7 @@
       },
       {
         "postAggregationTheory": "",
-        "actionName": "PercentageComputedField",
+        "actionName": "StackPercentageComputedField",
         "fields": [
           "NotEnoughStock",
           "Total Complaints"
@@ -38542,7 +38542,7 @@
       },
       {
         "postAggregationTheory": "",
-        "actionName": "PercentageComputedField",
+        "actionName": "StackPercentageComputedField",
         "fields": [
           "SyncNotWorking",
           "Total Complaints"
@@ -38551,7 +38551,7 @@
       },
       {
         "postAggregationTheory": "",
-        "actionName": "PercentageComputedField",
+        "actionName": "StackPercentageComputedField",
         "fields": [
           "LackOfInternet",
           "Total Complaints"
