@@ -7895,7 +7895,8 @@
                   "code": "",
                   "chartType": "bar",
                   "filter": "",
-                  "headers": []
+                  "headers": [],
+                  "tabName" : "NUMBER"
                 }
               ]
             },
@@ -7922,7 +7923,8 @@
                   "code": "",
                   "chartType": "bar",
                   "filter": "",
-                  "headers": []
+                  "headers": [],
+                  "tabName" : "NUMBER"
                 }
               ]
             }

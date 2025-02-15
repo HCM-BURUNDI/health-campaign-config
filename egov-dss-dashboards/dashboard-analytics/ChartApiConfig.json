@@ -38479,7 +38479,7 @@
     "computedFields": [
       {
         "postAggregationTheory": "",
-        "actionName": "StackPercentageComputedField",
+        "actionName": "PercentageComputedField",
         "fields": [
           "Other",
           "Total Complaints"
@@ -38488,7 +38488,7 @@
       },
       {
         "postAggregationTheory": "",
-        "actionName": "StackPercentageComputedField",
+        "actionName": "PercentageComputedField",
         "fields": [
           "PerformanceIssue",
           "Total Complaints"
@@ -38497,7 +38497,7 @@
       },
       {
         "postAggregationTheory": "",
-        "actionName": "StackPercentageComputedField",
+        "actionName": "PercentageComputedField",
         "fields": [
           "SecurityIssues",
           "Total Complaints"
@@ -38506,7 +38506,7 @@
       },
       {
         "postAggregationTheory": "",
-        "actionName": "StackPercentageComputedField",
+        "actionName": "PercentageComputedField",
         "fields": [
           "DataIssues",
           "Total Complaints"
@@ -38515,7 +38515,7 @@
       },
       {
         "postAggregationTheory": "",
-        "actionName": "StackPercentageComputedField",
+        "actionName": "PercentageComputedField",
         "fields": [
           "TechnicalIssues",
           "Total Complaints"
@@ -38524,7 +38524,7 @@
       },
       {
         "postAggregationTheory": "",
-        "actionName": "StackPercentageComputedField",
+        "actionName": "PercentageComputedField",
         "fields": [
           "UserAccountIssues",
           "Total Complaints"
@@ -38533,7 +38533,7 @@
       },
       {
         "postAggregationTheory": "",
-        "actionName": "StackPercentageComputedField",
+        "actionName": "PercentageComputedField",
         "fields": [
           "NotEnoughStock",
           "Total Complaints"
@@ -38542,7 +38542,7 @@
       },
       {
         "postAggregationTheory": "",
-        "actionName": "StackPercentageComputedField",
+        "actionName": "PercentageComputedField",
         "fields": [
           "SyncNotWorking",
           "Total Complaints"
@@ -38551,7 +38551,7 @@
       },
       {
         "postAggregationTheory": "",
-        "actionName": "StackPercentageComputedField",
+        "actionName": "PercentageComputedField",
         "fields": [
           "LackOfInternet",
           "Total Complaints"
