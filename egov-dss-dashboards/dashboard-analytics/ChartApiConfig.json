@@ -38497,7 +38497,7 @@
       },
       {
         "postAggregationTheory": "",
-        "actionName": "PercentageComputedField",
+        "actionName": "StackPercentageComputedField",
         "fields": [
           "SecurityIssues",
           "Total Complaints"
