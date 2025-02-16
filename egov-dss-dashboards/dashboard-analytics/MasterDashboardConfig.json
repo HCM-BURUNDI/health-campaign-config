@@ -3,7 +3,7 @@
   "dashboards": [
     {
       "name": "DSS_HEALTH_NATIONAL_DASHBOARD_BURUNDI_HEADING",
-      "id": "national-health-dashboard-burundi",
+      "id": "national-health-dashboard",
       "isActive": "",
       "style": "linear",
       "visualizations": [
@@ -245,7 +245,7 @@
               "noUnit": true,
               "isCollapsible": false,
               "ref": {
-                "url": "provincial-health-dashboard-burundi",
+                "url": "provincial-health-dashboard",
                 "logoUrl": "",
                 "type": "internal"
               },
@@ -266,7 +266,7 @@
     },
     {
       "name": "DSS_HEALTH_OVERVIEW_DASHBOARD_BURUNDI_HEADING",
-      "id": "provincial-health-dashboard-burundi",
+      "id": "provincial-health-dashboard",
       "isActive": "",
       "style": "linear",
       "hideFilterFields": [
@@ -2000,7 +2000,7 @@
     },
     {
       "name": "DSS_HEALTH_OVERVIEW_DASHBOARD_BURUNDI_HEADING",
-      "id": "district-health-dashboard-burundi",
+      "id": "district-health-dashboard",
       "isActive": "",
       "hideFilterFields": [
         "DDR",
