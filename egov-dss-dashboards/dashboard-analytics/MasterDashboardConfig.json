@@ -2993,7 +2993,7 @@
               "isCollapsible": false,
               "charts": [
                 {
-                  "id": "complaintsByHealthDistrictTotalBurundi",
+                  "id": "complaintsByMunicipalityTotalBurundi",
                   "name": "DSS_HEALTH_COMPLAINTS_BY_HEALTH_DISTRICT_TOTAL_BURUNDI",
                   "code": "",
                   "chartType": "bar",
@@ -3119,8 +3119,8 @@
               "isCollapsible": false,
               "charts": [
                 {
-                  "id": "complaintsByStatusSummaryDistrictBurundi",
-                  "name": "DSS_HEALTH_COMPLAINTS_STATUS_SUMMARY_DISTRICT_BURUNDI",
+                  "id": "complaintsByStatusSummaryHealthDistrictBurundi",
+                  "name": "DSS_HEALTH_COMPLAINTS_STATUS_SUMMARY_HEALTH_DISTRICT_BURUNDI",
                   "code": "",
                   "chartType": "table",
                   "filter": "",
