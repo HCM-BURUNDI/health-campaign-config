@@ -7358,7 +7358,7 @@
         "dateRefField": "Data.household.clientAuditDetails.lastModifiedTime",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"tesProjectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery": "{\"size\":0,\"aggs\":{\"Total Population covered\":{\"terms\":{\"size\":500,\"field\":\"Data.boundaryHierarchy.district.keyword\",\"order\":{\"_key\":\"asc\"}},\"aggs\":{\"total_count\":{\"sum\":{\"field\":\"Data.household.memberCount.keyword\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Total Population covered\":{\"terms\":{\"size\":500,\"field\":\"Data.boundaryHierarchy.district.keyword\",\"order\":{\"_key\":\"asc\"}},\"aggs\":{\"total_count\":{\"sum\":{\"field\":\"Data.household.memberCount\"}}}}}}"
       }
     ],
     "filterKeys": [],
@@ -7413,7 +7413,7 @@
         "dateRefField": "Data.household.clientAuditDetails.lastModifiedTime",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"tesProjectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery": "{\"size\":0,\"aggs\":{\"Total Population covered\":{\"terms\":{\"size\":500,\"field\":\"Data.boundaryHierarchy.municipality.keyword\",\"order\":{\"_key\":\"asc\"}},\"aggs\":{\"total_count\":{\"sum\":{\"field\":\"Data.household.memberCount.keyword\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Total Population covered\":{\"terms\":{\"size\":500,\"field\":\"Data.boundaryHierarchy.municipality.keyword\",\"order\":{\"_key\":\"asc\"}},\"aggs\":{\"total_count\":{\"sum\":{\"field\":\"Data.household.memberCount\"}}}}}}"
       }
     ],
     "filterKeys": [],
@@ -10027,14 +10027,14 @@
         "dateRefField": "Data.createdTime",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"tesProjectTypeId\": \"Data.projectTypeId.keyword\"}",
         "indexName": "project-task-index-v1",
-        "aggrQuery": "{\"size\":0,\"aggs\":{\"AGGS\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.deliveredTo.keyword\":\"HOUSEHOLD\"}},{\"term\":{\"Data.isDelivered\":true}},{\"term\":{\"Data.administrationStatus.keyword\":\"ADMINISTRATION_SUCCESS\"}}]}},\"aggs\":{\"Population coverage\":{\"terms\":{\"size\":500,\"order\":{\"_key\":\"asc\"},\"field\":\"Data.boundaryHierarchy.district.keyword\"},\"aggs\":{\"Population covered count\":{\"sum\":{\"field\":\"Data.memberCount.keyword\"}}}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"AGGS\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.deliveredTo.keyword\":\"HOUSEHOLD\"}},{\"term\":{\"Data.isDelivered\":true}},{\"term\":{\"Data.administrationStatus.keyword\":\"ADMINISTRATION_SUCCESS\"}}]}},\"aggs\":{\"Population coverage\":{\"terms\":{\"size\":500,\"order\":{\"_key\":\"asc\"},\"field\":\"Data.boundaryHierarchy.district.keyword\"},\"aggs\":{\"Population covered count\":{\"sum\":{\"field\":\"Data.memberCount\"}}}}}}}}"
       },
       {
         "module": "COMMON",
         "dateRefField": "Data.household.auditDetails.lastModifiedTime",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"tesProjectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery": "{\"size\":0,\"aggs\":{\"Population registered\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.district.keyword\",\"size\":1000},\"aggs\":{\"Population registered count\":{\"sum\":{\"field\":\"Data.household.memberCount.keyword\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Population registered\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.district.keyword\",\"size\":1000},\"aggs\":{\"Population registered count\":{\"sum\":{\"field\":\"Data.household.memberCount\"}}}}}}"
       }
     ],
     "filterKeys": [],
