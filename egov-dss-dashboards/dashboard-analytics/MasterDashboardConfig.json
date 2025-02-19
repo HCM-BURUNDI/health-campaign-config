@@ -1247,6 +1247,32 @@
           ]
         },
         {
+          "row": 3,
+          "name": "DSS_KIBANA_MAPS",
+          "vizArray": [
+            {
+              "id": 4103,
+              "name": "DASHBOARD_MAPS_CHECKLIST_FILLED",
+              "label": "DASHBOARD_MAPS_CHECKLIST_FILLED",
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "checklistFilledRate",
+                  "name": "DASHBOARD_MAPS_CHECKLIST_FILLED",
+                  "code": "",
+                  "moduleName": "burundi-bednet",
+                  "pageName": "checklist-filled-rate",
+                  "chartType": "kibanaComponent",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
           "row": 1,
           "name": "DSS_HEALTH_COMPLAINTS",
           "vizArray": [
