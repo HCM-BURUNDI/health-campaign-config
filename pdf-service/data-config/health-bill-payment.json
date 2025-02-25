@@ -193,6 +193,42 @@
                                 }
                             },
                             {
+                                "variable": "total_label_table_header_wage",
+                                "value": {
+                                    "path": "TOTAL_PDF_STATIC_LABEL_BILL_TABLE_WAGE"
+                                },
+                                "type": "label",
+                                "localisation": {
+                                    "required": true,
+                                    "prefix": null,
+                                    "module": "hcm-payments"
+                                }
+                            },
+                            {
+                                "variable": "total_label_table_header_food",
+                                "value": {
+                                    "path": "_TOTAL_PDF_STATIC_LABEL_BILL_TABLE_FOOD"
+                                },
+                                "type": "label",
+                                "localisation": {
+                                    "required": true,
+                                    "prefix": null,
+                                    "module": "hcm-payments"
+                                }
+                            },
+                            {
+                                "variable": "total_label_table_header_transportation",
+                                "value": {
+                                    "path": "TOTAL_PDF_STATIC_LABEL_BILL_TABLE_TRANSPORTATION"
+                                },
+                                "type": "label",
+                                "localisation": {
+                                    "required": true,
+                                    "prefix": null,
+                                    "module": "hcm-payments"
+                                }
+                            },
+                            {
                                 "variable": "label_table_header_total_amount_to_pay",
                                 "value": {
                                     "path": "PDF_STATIC_LABEL_BILL_TABLE_TOTAL_AMOUNT_TO_PAY"
