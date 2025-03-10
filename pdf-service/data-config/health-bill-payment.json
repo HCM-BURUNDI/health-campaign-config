@@ -333,6 +333,30 @@
                                 "format": " var y=arguments[0]; y=y.toFixed(2); return y;"
                             },
                             {
+                                "variable": "totalFoodAmount",
+                                "value": {
+                                    "path": "$.totalFoodAmount"
+                                },
+                                "type": "function",
+                                "format": " var y=arguments[0]; y=y.toFixed(2); return y;"
+                            },
+                            {
+                                "variable": "totalTransportAmount",
+                                "value": {
+                                    "path": "$.totalTransportAmount"
+                                },
+                                "type": "function",
+                                "format": " var y=arguments[0]; y=y.toFixed(2); return y;"
+                            },
+                            {
+                                "variable": "totalWageAmount",
+                                "value": {
+                                    "path": "$.totalWageAmount"
+                                },
+                                "type": "function",
+                                "format": " var y=arguments[0]; y=y.toFixed(2); return y;"
+                            },
+                            {
                                 "variable": "numberOfIndividuals",
                                 "value": {
                                     "path": "$.numberOfIndividuals"
