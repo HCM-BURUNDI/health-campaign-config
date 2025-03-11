@@ -8,7 +8,7 @@ ServiceMaps:
         - name: muster-inbox
           type: musterRoll
           id: $.musterRoll.id,$.musterRoll.tenantId
-          jsonPath: $.*
+          jsonPath: $
           isBulk: false
           customJsonMapping:
             indexMapping: { "Data":{}}
