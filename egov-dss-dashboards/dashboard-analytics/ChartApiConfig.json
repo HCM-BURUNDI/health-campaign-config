@@ -13249,5 +13249,93 @@
     "sort": "sortKeyAsc",
     "insight": {},
     "_comment": " "
+  },
+  "totalHHRegisteredUnderRefugeeCamps" : {
+    "chartName": "DSS_HEALTH_NATIONAL_TOTAL_HH_IN_REFUGEE_CAMPS",
+    "queries": [
+      {
+        "module": "COMMON",
+        "dateRefField": "",
+        "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"tesProjectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
+        "indexName": "household-index-v1",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"AGGS\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.additionalDetails.communityKey.keyword\":\"refugee_camps\"}}],\"must_not\":[{\"term\":{\"Data.additionalDetails.status.keyword\":\"CLOSED_HOUSEHOLD\"}}]}},\"aggs\":{\"Total hh in refugee camps count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}}}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "action": "",
+    "aggregationPaths": [
+      "Total hh in refugee camps count"
+    ],
+    "insight": {},
+    "_comment": " "
+  },
+  "totalPopulationRegisteredUnderRefugeeCamps" : {
+    "chartName": "DSS_HEALTH_NATIONAL_TOTAL_POPULATION_IN_REFUGEE_CAMPS",
+    "queries": [
+      {
+        "module": "COMMON",
+        "dateRefField": "",
+        "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"tesProjectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
+        "indexName": "household-index-v1",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"AGGS\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.additionalDetails.communityKey.keyword\":\"refugee_camps\"}}],\"must_not\":[{\"term\":{\"Data.additionalDetails.status.keyword\":\"CLOSED_HOUSEHOLD\"}}]}},\"aggs\":{\"Total population in refugee camps count\":{\"sum\":{\"field\":\"Data.household.memberCount\"}}}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "action": "",
+    "aggregationPaths": [
+      "Total population in refugee camps count"
+    ],
+    "insight": {},
+    "_comment": " "
+  },
+  "totalRefugeeCampsPopulationWithBednets": {
+    "chartName": "DSS_HEALTH_NATIONAL_TOTAL_REFUGEE_CAMPS_POPULATION_WITH_NETS",
+    "queries": [
+      {
+        "module": "COMMON",
+        "dateRefField": "",
+        "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"tesProjectTypeId\": \"Data.projectTypeId.keyword\"}",
+        "indexName": "project-task-index-v1",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"AGGS\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.additionalDetails.communityKey.keyword\":\"refugee_camps\"}},{\"term\":{\"Data.isDelivered\":true}},{\"term\":{\"Data.administrationStatus.keyword\":\"ADMINISTRATION_SUCCESS\"}}]}},\"aggs\":{\"Total population in refugee camps with bednets\":{\"sum\":{\"field\":\"Data.memberCount\"}}}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "action": "",
+    "aggregationPaths": [
+      "Total population in refugee camps with bednets"
+    ],
+    "insight": {},
+    "_comment": " "
+  },
+  "totalBednetsDistributedToRefugeeCamps": {
+    "chartName": "DSS_HEALTH_NATIONAL_TOTAL_BEDNETS_DISTRIBUTED_TO_REFUGEE_CAMPS",
+    "queries": [
+      {
+        "module": "COMMON",
+        "dateRefField": "",
+        "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"tesProjectTypeId\": \"Data.projectTypeId.keyword\"}",
+        "indexName": "project-task-index-v1",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"AGGS\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.additionalDetails.communityKey.keyword\":\"refugee_camps\"}},{\"term\":{\"Data.isDelivered\":true}},{\"term\":{\"Data.administrationStatus.keyword\":\"ADMINISTRATION_SUCCESS\"}}]}},\"aggs\":{\"Total bednets distributed to refugee camps\":{\"sum\":{\"field\":\"Data.quantity\"}}}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "action": "",
+    "aggregationPaths": [
+      "Total bednets distributed to refugee camps"
+    ],
+    "insight": {},
+    "_comment": " "
   }
 }
