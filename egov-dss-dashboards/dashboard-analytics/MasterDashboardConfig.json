@@ -511,17 +511,7 @@
                   "chartType": "metric",
                   "filter": "",
                   "headers": []
-                }
-              ]
-            },
-            {
-              "id": 3068,
-              "name": "DSS_HEALTH_REFUGEE_CAMPS",
-              "label": "DSS_HEALTH_REFUGEE_CAMPS",
-              "vizType": "stacked-collection",
-              "noUnit": true,
-              "isCollapsible": false,
-              "charts": [
+                },
                 {
                   "id": "totalRefugeeCampsDistributions",
                   "name": "DSS_HEALTH_NATIONAL_TOTAL_REFUGEE_CAMPS_DISTRIBUTION",
