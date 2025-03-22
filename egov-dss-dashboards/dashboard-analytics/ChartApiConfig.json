@@ -7706,7 +7706,7 @@
         "dateRefField": "Data.household.auditDetails.lastModifiedTime",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery": "{\"size\":0,\"aggs\":{\"Household data by boundary\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.district.keyword\",\"size\":1000},\"aggs\":{\"Households visited count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"Population covered count\":{\"sum\":{\"field\":\"Data.household.memberCount\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"AGGS\":{\"filter\":{\"bool\":{\"must_not\":{\"term\":{\"Data.additionalDetails.status.keyword\":\"CLOSED_HOUSEHOLD\"}}}},\"aggs\":{\"Household data by boundary\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.district.keyword\",\"size\":1000},\"aggs\":{\"Households visited count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"Population covered count\":{\"sum\":{\"field\":\"Data.household.memberCount\"}}}}}}}}"
       }
     ],
     "filterKeys": [
@@ -7733,6 +7733,15 @@
     "computedFields": [
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Household target"
+        ],
+        "newField": "Number of households targeted",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Households visited count",
@@ -7743,12 +7752,30 @@
       },
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Population target"
+        ],
+        "newField": "Number of population targeted",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Population covered count",
           "Overall Population target"
         ],
         "newField": "Target Achievement Population",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Bednet target"
+        ],
+        "newField": "Number of bednet targeted",
         "_comments": ""
       },
       {
@@ -7838,7 +7865,7 @@
         "dateRefField": "Data.household.auditDetails.lastModifiedTime",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery": "{\"size\":0,\"aggs\":{\"Household data by boundary\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.municipality.keyword\",\"size\":1000},\"aggs\":{\"Households visited count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"Population covered count\":{\"sum\":{\"field\":\"Data.household.memberCount\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"AGGS\":{\"filter\":{\"bool\":{\"must_not\":{\"term\":{\"Data.additionalDetails.status.keyword\":\"CLOSED_HOUSEHOLD\"}}}},\"aggs\":{\"Household data by boundary\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.municipality.keyword\",\"size\":1000},\"aggs\":{\"Households visited count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"Population covered count\":{\"sum\":{\"field\":\"Data.household.memberCount\"}}}}}}}}"
       }
     ],
     "filterKeys": [
@@ -7865,6 +7892,15 @@
     "computedFields": [
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Household target"
+        ],
+        "newField": "Number of households targeted",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Households visited count",
@@ -7875,12 +7911,30 @@
       },
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Population target"
+        ],
+        "newField": "Number of population targeted",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Population covered count",
           "Overall Population target"
         ],
         "newField": "Target Achievement Population",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Bednet target"
+        ],
+        "newField": "Number of bednet targeted",
         "_comments": ""
       },
       {
@@ -7970,7 +8024,7 @@
         "dateRefField": "Data.household.auditDetails.lastModifiedTime",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"municipality\": \"Data.boundaryHierarchy.municipality.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery": "{\"size\":0,\"aggs\":{\"Household data by boundary\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.areaOfResponsibility.keyword\",\"size\":1000},\"aggs\":{\"Households visited count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"Population covered count\":{\"sum\":{\"field\":\"Data.household.memberCount\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"AGGS\":{\"filter\":{\"bool\":{\"must_not\":{\"term\":{\"Data.additionalDetails.status.keyword\":\"CLOSED_HOUSEHOLD\"}}}},\"aggs\":{\"Household data by boundary\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.areaOfResponsibility.keyword\",\"size\":1000},\"aggs\":{\"Households visited count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"Population covered count\":{\"sum\":{\"field\":\"Data.household.memberCount\"}}}}}}}}"
       }
     ],
     "filterKeys": [
@@ -7997,6 +8051,15 @@
     "computedFields": [
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Household target"
+        ],
+        "newField": "Number of households targeted",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Households visited count",
@@ -8007,12 +8070,30 @@
       },
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Population target"
+        ],
+        "newField": "Number of population targeted",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Population covered count",
           "Overall Population target"
         ],
         "newField": "Target Achievement Population",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Bednet target"
+        ],
+        "newField": "Number of bednet targeted",
         "_comments": ""
       },
       {
@@ -8102,7 +8183,7 @@
         "dateRefField": "Data.household.auditDetails.lastModifiedTime",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"municipality\": \"Data.boundaryHierarchy.municipality.keyword\", \"areaOfResponsibility\": \"Data.boundaryHierarchy.areaOfResponsibility.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery": "{\"size\":0,\"aggs\":{\"Household data by boundary\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.hills.keyword\",\"size\":1000},\"aggs\":{\"Households visited count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"Population covered count\":{\"sum\":{\"field\":\"Data.household.memberCount\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"AGGS\":{\"filter\":{\"bool\":{\"must_not\":{\"term\":{\"Data.additionalDetails.status.keyword\":\"CLOSED_HOUSEHOLD\"}}}},\"aggs\":{\"Household data by boundary\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.hills.keyword\",\"size\":1000},\"aggs\":{\"Households visited count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"Population covered count\":{\"sum\":{\"field\":\"Data.household.memberCount\"}}}}}}}}"
       }
     ],
     "filterKeys": [
@@ -8129,6 +8210,15 @@
     "computedFields": [
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Household target"
+        ],
+        "newField": "Number of households targeted",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Households visited count",
@@ -8139,12 +8229,30 @@
       },
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Population target"
+        ],
+        "newField": "Number of population targeted",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Population covered count",
           "Overall Population target"
         ],
         "newField": "Target Achievement Population",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Bednet target"
+        ],
+        "newField": "Number of bednet targeted",
         "_comments": ""
       },
       {
@@ -8234,7 +8342,7 @@
         "dateRefField": "Data.household.auditDetails.lastModifiedTime",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"municipality\": \"Data.boundaryHierarchy.municipality.keyword\", \"areaOfResponsibility\": \"Data.boundaryHierarchy.areaOfResponsibility.keyword\", \"hills\": \"Data.boundaryHierarchy.hills.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery": "{\"size\":0,\"aggs\":{\"Household data by boundary\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.subHills.keyword\",\"size\":1000},\"aggs\":{\"Households visited count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"Population covered count\":{\"sum\":{\"field\":\"Data.household.memberCount\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"AGGS\":{\"filter\":{\"bool\":{\"must_not\":{\"term\":{\"Data.additionalDetails.status.keyword\":\"CLOSED_HOUSEHOLD\"}}}},\"aggs\":{\"Household data by boundary\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.subHills.keyword\",\"size\":1000},\"aggs\":{\"Households visited count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"Population covered count\":{\"sum\":{\"field\":\"Data.household.memberCount\"}}}}}}}}"
       }
     ],
     "filterKeys": [
@@ -8261,6 +8369,15 @@
     "computedFields": [
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Household target"
+        ],
+        "newField": "Number of households targeted",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Households visited count",
@@ -8271,12 +8388,30 @@
       },
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Population target"
+        ],
+        "newField": "Number of population targeted",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Population covered count",
           "Overall Population target"
         ],
         "newField": "Target Achievement Population",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Bednet target"
+        ],
+        "newField": "Number of bednet targeted",
         "_comments": ""
       },
       {
