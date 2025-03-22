@@ -779,6 +779,34 @@
                   "tabName": "NUMBER"
                 }
               ]
+            },
+            {
+              "id": 3073,
+              "name": "DSS_HEALTH_REFUSAL_CASES",
+              "label": "DSS_HEALTH_REFUSAL_CASES",
+              "vizType": "chart",
+              "noUnit": false,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "refusalCasesDistrictPercentBurundi",
+                  "name": "DSS_HEALTH_REFUSAL_CASES_DISTRICT_PERCENTAGE_BURUNDI",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": [],
+                  "tabName": "PERCENT"
+                },
+                {
+                  "id": "refusalCasesDistrictBurundi",
+                  "name": "DSS_HEALTH_REFUSAL_CASES_DISTRICT_BURUNDI",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": [],
+                  "tabName": "NUMBER"
+                }
+              ]
             }
           ]
         },
