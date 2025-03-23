@@ -13975,7 +13975,7 @@
     "isCumulative": false,
     "valueType": "percentage",
     "plotLabel": "none",
-    "drillChart": "attendanceSubHillsPercentBurundi",
+    "drillChart": "none",
     "documentType": "_doc",
     "action": "percentage",
     "aggregationPaths": [
