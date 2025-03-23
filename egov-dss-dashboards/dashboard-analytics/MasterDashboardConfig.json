@@ -2113,6 +2113,48 @@
               ]
             }
           ]
+        },
+        {
+          "row": 1,
+          "name": "DSS_HEALTH_PAYMENTS",
+          "vizArray": [
+            {
+              "id": 4200,
+              "name": "DSS_HEALTH_PAYMENT_UNIQUE_VS_TOTAL_USERS",
+              "label": "DSS_HEALTH_PAYMENT_UNIQUE_VS_TOTAL_USERS",
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "uniqueVsTotalUsersInBillDistrictBurundi",
+                  "name": "DSS_HEALTH_UNIQUE_VS_TOTAL_USERS_IN_BILL_BURUNDI",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 4201,
+              "name": "DSS_HEALTH_ATTENDANCE_PERCENTAGE",
+              "label": "DSS_HEALTH_ATTENDANCE_PERCENTAGE",
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "attendanceDistrictPercentageBurundi",
+                  "name": "DSS_HEALTH_ATTENDANCE_DISTRICT_PERCENT",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3867,6 +3909,48 @@
                   "name": "DSS_HEALTH_DATA_QUALITY_SUMMARY_MUNICIPALITY_BURUNDI",
                   "code": "",
                   "chartType": "table",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 1,
+          "name": "DSS_HEALTH_PAYMENTS",
+          "vizArray": [
+            {
+              "id": 4300,
+              "name": "DSS_HEALTH_PAYMENT_UNIQUE_VS_TOTAL_USERS",
+              "label": "DSS_HEALTH_PAYMENT_UNIQUE_VS_TOTAL_USERS",
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "uniqueVsTotalUsersInBillMunicipalityBurundi",
+                  "name": "DSS_HEALTH_UNIQUE_VS_TOTAL_USERS_IN_BILL_BURUNDI",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 4301,
+              "name": "DSS_HEALTH_ATTENDANCE_PERCENTAGE",
+              "label": "DSS_HEALTH_ATTENDANCE_PERCENTAGE",
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "attendanceMunicipalityPercentBurundi",
+                  "name": "DSS_HEALTH_ATTENDANCE_MUNICIPALITY_PERCENT",
+                  "code": "",
+                  "chartType": "bar",
                   "filter": "",
                   "headers": []
                 }
