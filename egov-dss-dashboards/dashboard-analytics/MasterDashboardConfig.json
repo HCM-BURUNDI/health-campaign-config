@@ -2349,8 +2349,40 @@
                   "headers": []
                 },
                 {
+                  "id": "totalHHRegisteredUnderRefugeeCamps",
+                  "name": "DSS_HEALTH_NATIONAL_TOTAL_HH_IN_REFUGEE_CAMPS",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "totalPopulationRegisteredUnderRefugeeCamps",
+                  "name": "DSS_HEALTH_NATIONAL_TOTAL_POPULATION_IN_REFUGEE_CAMPS",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
                   "id": "totalRefugeeCampsDistributions",
                   "name": "DSS_HEALTH_NATIONAL_TOTAL_REFUGEE_CAMPS_DISTRIBUTION",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "totalRefugeeCampsPopulationWithBednets",
+                  "name": "DSS_HEALTH_NATIONAL_TOTAL_REFUGEE_CAMPS_POPULATION_WITH_NETS",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "totalBednetsDistributedToRefugeeCamps",
+                  "name": "DSS_HEALTH_NATIONAL_TOTAL_BEDNETS_DISTRIBUTED_TO_REFUGEE_CAMPS",
                   "code": "",
                   "chartType": "metric",
                   "filter": "",
@@ -2560,6 +2592,34 @@
                 {
                   "id": "closedHouseholdsMunicipalityBurundi",
                   "name": "DSS_HEALTH_CLOSED_HOUSEHOLD_MUNICIPALITY_BURUNDI",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": [],
+                  "tabName": "NUMBER"
+                }
+              ]
+            },
+            {
+              "id": 4005,
+              "name": "DSS_HEALTH_REFUSAL_CASES",
+              "label": "DSS_HEALTH_REFUSAL_CASES",
+              "vizType": "chart",
+              "noUnit": false,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "refusalCasesMunicipalityPercentBurundi",
+                  "name": "DSS_HEALTH_REFUSAL_CASES_MUNICIPALITY_PERCENTAGE_BURUNDI",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": [],
+                  "tabName": "PERCENT"
+                },
+                {
+                  "id": "refusalCasesMunicipalityBurundi",
+                  "name": "DSS_HEALTH_REFUSAL_CASES_MUNICIPALITY_BURUNDI",
                   "code": "",
                   "chartType": "bar",
                   "filter": "",
