@@ -10383,7 +10383,7 @@
         "fields": [
           "Bednets distributed count"
         ],
-        "newField": "Households visited",
+        "newField": "Bednets distributed",
         "_comments": ""
       },
       {
@@ -10546,7 +10546,7 @@
         "fields": [
           "Bednets distributed count"
         ],
-        "newField": "Households visited",
+        "newField": "Bednets distributed",
         "_comments": ""
       },
       {
@@ -10709,7 +10709,7 @@
         "fields": [
           "Bednets distributed count"
         ],
-        "newField": "Households visited",
+        "newField": "Bednets distributed",
         "_comments": ""
       },
       {
@@ -10872,7 +10872,7 @@
         "fields": [
           "Bednets distributed count"
         ],
-        "newField": "Households visited",
+        "newField": "Bednets distributed",
         "_comments": ""
       },
       {
@@ -11035,7 +11035,7 @@
         "fields": [
           "Bednets distributed count"
         ],
-        "newField": "Households visited",
+        "newField": "Bednets distributed",
         "_comments": ""
       },
       {
@@ -11173,7 +11173,7 @@
         "fields": [
           "Bednets distributed count"
         ],
-        "newField": "Households visited",
+        "newField": "Bednets distributed",
         "_comments": ""
       },
       {
@@ -11308,7 +11308,7 @@
         "fields": [
           "Bednets distributed count"
         ],
-        "newField": "Households visited",
+        "newField": "Bednets distributed",
         "_comments": ""
       },
       {
