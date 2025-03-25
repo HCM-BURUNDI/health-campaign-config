@@ -10322,6 +10322,15 @@
     "computedFields": [
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Households visited count"
+        ],
+        "newField": "Households visited",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Successful deliveries count",
@@ -10332,12 +10341,30 @@
       },
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Population covered count"
+        ],
+        "newField": "Population covered during registration",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Population covered during delivery count",
           "Population covered count"
         ],
         "newField": "Target Achievement Population",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Bednet target"
+        ],
+        "newField": "Bednet Target",
         "_comments": ""
       },
       {
@@ -10356,7 +10383,7 @@
         "fields": [
           "Bednets distributed count"
         ],
-        "newField": "Households visited",
+        "newField": "Bednets distributed",
         "_comments": ""
       },
       {
@@ -10458,6 +10485,15 @@
     "computedFields": [
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Households visited count"
+        ],
+        "newField": "Households visited",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Successful deliveries count",
@@ -10468,12 +10504,30 @@
       },
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Population covered count"
+        ],
+        "newField": "Population covered during registration",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Population covered during delivery count",
           "Population covered count"
         ],
         "newField": "Target Achievement Population",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Bednet target"
+        ],
+        "newField": "Bednet Target",
         "_comments": ""
       },
       {
@@ -10492,7 +10546,7 @@
         "fields": [
           "Bednets distributed count"
         ],
-        "newField": "Households visited",
+        "newField": "Bednets distributed",
         "_comments": ""
       },
       {
@@ -10594,6 +10648,15 @@
     "computedFields": [
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Households visited count"
+        ],
+        "newField": "Households visited",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Successful deliveries count",
@@ -10604,12 +10667,30 @@
       },
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Population covered count"
+        ],
+        "newField": "Population covered during registration",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Population covered during delivery count",
           "Population covered count"
         ],
         "newField": "Target Achievement Population",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Bednet target"
+        ],
+        "newField": "Bednet Target",
         "_comments": ""
       },
       {
@@ -10628,7 +10709,7 @@
         "fields": [
           "Bednets distributed count"
         ],
-        "newField": "Households visited",
+        "newField": "Bednets distributed",
         "_comments": ""
       },
       {
@@ -10730,6 +10811,15 @@
     "computedFields": [
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Households visited count"
+        ],
+        "newField": "Households visited",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Successful deliveries count",
@@ -10740,12 +10830,30 @@
       },
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Population covered count"
+        ],
+        "newField": "Population covered during registration",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Population covered during delivery count",
           "Population covered count"
         ],
         "newField": "Target Achievement Population",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Bednet target"
+        ],
+        "newField": "Bednet Target",
         "_comments": ""
       },
       {
@@ -10764,7 +10872,7 @@
         "fields": [
           "Bednets distributed count"
         ],
-        "newField": "Households visited",
+        "newField": "Bednets distributed",
         "_comments": ""
       },
       {
@@ -10866,6 +10974,15 @@
     "computedFields": [
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Households visited count"
+        ],
+        "newField": "Households visited",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Successful deliveries count",
@@ -10876,12 +10993,30 @@
       },
       {
         "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Population covered count"
+        ],
+        "newField": "Population covered during registration",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
         "actionName": "PercentageComputedField",
         "fields": [
           "Population covered during delivery count",
           "Population covered count"
         ],
         "newField": "Target Achievement Population",
+        "_comments": ""
+      },
+      {
+        "postAggregationTheory": "",
+        "actionName": "AdditiveComputedField",
+        "fields": [
+          "Overall Bednet target"
+        ],
+        "newField": "Bednet Target",
         "_comments": ""
       },
       {
@@ -10900,7 +11035,7 @@
         "fields": [
           "Bednets distributed count"
         ],
-        "newField": "Households visited",
+        "newField": "Bednets distributed",
         "_comments": ""
       },
       {
@@ -11038,7 +11173,7 @@
         "fields": [
           "Bednets distributed count"
         ],
-        "newField": "Households visited",
+        "newField": "Bednets distributed",
         "_comments": ""
       },
       {
@@ -11173,7 +11308,7 @@
         "fields": [
           "Bednets distributed count"
         ],
-        "newField": "Households visited",
+        "newField": "Bednets distributed",
         "_comments": ""
       },
       {
