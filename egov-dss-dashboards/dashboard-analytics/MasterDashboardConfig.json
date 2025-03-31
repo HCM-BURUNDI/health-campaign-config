@@ -2155,6 +2155,32 @@
               ]
             }
           ]
+        },
+        {
+          "row": 2,
+          "name": "DSS_HEALTH_PAYMENTS",
+          "vizArray": [
+            {
+              "id": 4202,
+              "name": "DASHBOARD_BILL_SUMMARY",
+              "label": "DASHBOARD_BILL_SUMMARY",
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "billSummaryDistrict",
+                  "name": "DASHBOARD_BILL_SUMMARY",
+                  "code": "",
+                  "moduleName": "burundi-bednet",
+                  "pageName": "bill-muster-roll-district-summary",
+                  "chartType": "kibanaComponent",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3951,6 +3977,32 @@
                   "name": "DSS_HEALTH_ATTENDANCE_MUNICIPALITY_PERCENT",
                   "code": "",
                   "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "name": "DSS_HEALTH_PAYMENTS",
+          "vizArray": [
+            {
+              "id": 4302,
+              "name": "DASHBOARD_BILL_SUMMARY",
+              "label": "DASHBOARD_BILL_SUMMARY",
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "billSummaryMunicipality",
+                  "name": "DASHBOARD_BILL_SUMMARY",
+                  "code": "",
+                  "moduleName": "burundi-bednet",
+                  "pageName": "bill-muster-roll-municipality-summary",
+                  "chartType": "kibanaComponent",
                   "filter": "",
                   "headers": []
                 }
