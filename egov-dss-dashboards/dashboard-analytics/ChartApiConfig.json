@@ -80,15 +80,7 @@
     "aggregationPaths": [
       "Households Distributed"
     ],
-    "insight": {
-      "chartResponseMap": "householdsDistributedCumulative",
-      "action": "differenceOfNumbers",
-      "upwardIndicator": "positive",
-      "downwardIndicator": "negative",
-      "textMessage": "$indicator$value% than last $insightInterval",
-      "colorCode": "#228B22",
-      "insightInterval": "day"
-    },
+    "insight": {},
     "_comment": " "
   },
   "populationDistributedCumulative": {
@@ -106,20 +98,11 @@
     "valueType": "number",
     "drillChart": "none",
     "documentType": "_doc",
-    "filterForCurrentDay": true,
     "action": "",
     "aggregationPaths": [
       "Population Covered"
     ],
-    "insight": {
-      "chartResponseMap": "populationDistributedCumulative",
-      "action": "differenceOfNumbers",
-      "upwardIndicator": "positive",
-      "downwardIndicator": "negative",
-      "textMessage": "$indicator$value% than last $insightInterval",
-      "colorCode": "#228B22",
-      "insightInterval": "day"
-    },
+    "insight": {},
     "_comment": " "
   },
   "todayDistributions": {
@@ -181,15 +164,7 @@
       "Total visits"
     ],
     "postAggregationTheory": "",
-    "insight": {
-      "chartResponseMap": "householdDistributedCoverage",
-      "action": "differenceOfNumbers",
-      "upwardIndicator": "positive",
-      "downwardIndicator": "negative",
-      "textMessage": "$indicator$value% than last $insightInterval",
-      "colorCode": "#228B22",
-      "insightInterval": "dateRange"
-    },
+    "insight": {},
     "_comment": " "
   },
   "populationDistributedCoverage": {
@@ -220,15 +195,7 @@
       "Population visited"
     ],
     "postAggregationTheory": "",
-    "insight": {
-      "chartResponseMap": "populationDistributedCoverage",
-      "action": "differenceOfNumbers",
-      "upwardIndicator": "positive",
-      "downwardIndicator": "negative",
-      "textMessage": "$indicator$value% than last $insightInterval",
-      "colorCode": "#228B22",
-      "insightInterval": "dateRange"
-    },
+    "insight": {},
     "_comment": " "
   },
   "bednetsDistributedToSpecialGroups": {
