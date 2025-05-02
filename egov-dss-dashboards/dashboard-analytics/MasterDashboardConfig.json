@@ -1090,6 +1090,49 @@
           "name": "DSS_HEALTH_DISTRIBUTION",
           "vizArray": [
             {
+              "id": 30831,
+              "name": "DSS_HEALTH_DISTRIBUTION_BY_DISTRIBUTION_POINT",
+              "label": "DSS_HEALTH_DISTRIBUTION_BY_DISTRIBUTION_POINT",
+              "vizType": "chart",
+              "noUnit": false,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "householdsDistributedDistributionPoint",
+                  "name": "DSS_HEALTHL_BED_NETS_COVERAGE_DISTRICT_PERCENT_BURUNDI",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": [],
+                  "tabName": "HOUSEHOLD"
+                },
+                {
+                  "id": "populationCoveredDistributionPoint",
+                  "name": "DSS_HEALTHL_BED_NETS_COVERAGE_DISTRICT_BURUNDI",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": [],
+                  "tabName": "POPULATION"
+                },
+                {
+                  "id": "bednetsDistributedDistributionPoint",
+                  "name": "DSS_HEALTHL_BED_NETS_COVERAGE_DISTRICT_BURUNDI",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": [],
+                  "tabName": "BEDNET"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "name": "DSS_HEALTH_DISTRIBUTION",
+          "vizArray": [
+            {
               "id": 3085,
               "name": "DSS_HEALTH_TARGET_ACHIEVEMENT",
               "label": "DSS_HEALTH_TARGET_ACHIEVEMENT",
@@ -1157,7 +1200,7 @@
           ]
         },
         {
-          "row": 5,
+          "row": 6,
           "name": "DSS_HEALTH_DISTRIBUTION",
           "vizArray": [
             {
@@ -1219,7 +1262,7 @@
           ]
         },
         {
-          "row": 6,
+          "row": 7,
           "name": "DSS_HEALTH_DISTRIBUTION",
           "vizArray": [
             {
@@ -1253,7 +1296,7 @@
           ]
         },
         {
-          "row": 7,
+          "row": 8,
           "name": "DSS_HEALTH_DISTRIBUTION",
           "vizArray": [
             {
