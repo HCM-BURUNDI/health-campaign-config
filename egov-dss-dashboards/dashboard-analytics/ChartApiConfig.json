@@ -1,4 +1,127 @@
 {
+  "householdsDistributed": {
+    "chartName": "DSS_HEALTH_NATIONAL_TODAY_USED_QUANTITY",
+    "queries": [
+      {
+        "module": "COMMON",
+        "dateRefField": "Data.createdTime",
+        "requestQueryMap": "{\"projectTypeId\": \"Data.projectTypeId.keyword\"}",
+        "indexName": "project-task-index-v1",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Households Distributed\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.deliveredTo.keyword\":\"HOUSEHOLD\"}},{\"term\":{\"Data.administrationStatus.keyword\":\"ADMINISTRATION_SUCCESS\"}}],\"must_not\":[{\"terms\":{\"Data.additionalDetails.communityKey.keyword\":[\"refugee_camps\",\"special_groups\"]}}]}},\"aggs\":{\"distributions\":{\"value_count\":{\"field\":\"Data.id.keyword\"}}}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "filterForCurrentDay": true,
+    "action": "",
+    "aggregationPaths": [
+      "Households Distributed"
+    ],
+    "insight": {
+      "chartResponseMap": "householdsDistributed",
+      "action": "differenceOfNumbers",
+      "upwardIndicator": "positive",
+      "downwardIndicator": "negative",
+      "textMessage": "$indicator$value% than last $insightInterval",
+      "colorCode": "#228B22",
+      "insightInterval": "day"
+    },
+    "_comment": " "
+  },
+  "populationDistributed": {
+    "chartName": "DSS_HEALTH_NATIONAL_TODAY_USED_QUANTITY",
+    "queries": [
+      {
+        "module": "COMMON",
+        "dateRefField": "Data.createdTime",
+        "requestQueryMap": "{\"projectTypeId\": \"Data.projectTypeId.keyword\"}",
+        "indexName": "project-task-index-v1",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Population Covered\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.deliveredTo.keyword\":\"HOUSEHOLD\"}},{\"term\":{\"Data.administrationStatus.keyword\":\"ADMINISTRATION_SUCCESS\"}}],\"must_not\":[{\"terms\":{\"Data.additionalDetails.communityKey.keyword\":[\"refugee_camps\",\"special_groups\"]}}]}},\"aggs\":{\"distributions\":{\"sum\":{\"field\":\"Data.memberCount\"}}}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "filterForCurrentDay": true,
+    "action": "",
+    "aggregationPaths": [
+      "Population Covered"
+    ],
+    "insight": {
+      "chartResponseMap": "populationDistributed",
+      "action": "differenceOfNumbers",
+      "upwardIndicator": "positive",
+      "downwardIndicator": "negative",
+      "textMessage": "$indicator$value% than last $insightInterval",
+      "colorCode": "#228B22",
+      "insightInterval": "day"
+    },
+    "_comment": " "
+  },
+  "householdsDistributedCumulative": {
+    "chartName": "DSS_HEALTH_NATIONAL_TODAY_USED_QUANTITY",
+    "queries": [
+      {
+        "module": "COMMON",
+        "dateRefField": "",
+        "requestQueryMap": "{\"projectTypeId\": \"Data.projectTypeId.keyword\"}",
+        "indexName": "project-task-index-v1",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Households Distributed\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.deliveredTo.keyword\":\"HOUSEHOLD\"}},{\"term\":{\"Data.administrationStatus.keyword\":\"ADMINISTRATION_SUCCESS\"}}],\"must_not\":[{\"terms\":{\"Data.additionalDetails.communityKey.keyword\":[\"refugee_camps\",\"special_groups\"]}}]}},\"aggs\":{\"distributions\":{\"value_count\":{\"field\":\"Data.id.keyword\"}}}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "action": "",
+    "aggregationPaths": [
+      "Households Distributed"
+    ],
+    "insight": {
+      "chartResponseMap": "householdsDistributedCumulative",
+      "action": "differenceOfNumbers",
+      "upwardIndicator": "positive",
+      "downwardIndicator": "negative",
+      "textMessage": "$indicator$value% than last $insightInterval",
+      "colorCode": "#228B22",
+      "insightInterval": "day"
+    },
+    "_comment": " "
+  },
+  "populationDistributedCumulative": {
+    "chartName": "DSS_HEALTH_NATIONAL_TODAY_USED_QUANTITY",
+    "queries": [
+      {
+        "module": "COMMON",
+        "dateRefField": "Data.createdTime",
+        "requestQueryMap": "{\"projectTypeId\": \"Data.projectTypeId.keyword\"}",
+        "indexName": "project-task-index-v1",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Population Covered\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.deliveredTo.keyword\":\"HOUSEHOLD\"}},{\"term\":{\"Data.administrationStatus.keyword\":\"ADMINISTRATION_SUCCESS\"}}],\"must_not\":[{\"terms\":{\"Data.additionalDetails.communityKey.keyword\":[\"refugee_camps\",\"special_groups\"]}}]}},\"aggs\":{\"distributions\":{\"sum\":{\"field\":\"Data.memberCount\"}}}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "filterForCurrentDay": true,
+    "action": "",
+    "aggregationPaths": [
+      "Population Covered"
+    ],
+    "insight": {
+      "chartResponseMap": "populationDistributedCumulative",
+      "action": "differenceOfNumbers",
+      "upwardIndicator": "positive",
+      "downwardIndicator": "negative",
+      "textMessage": "$indicator$value% than last $insightInterval",
+      "colorCode": "#228B22",
+      "insightInterval": "day"
+    },
+    "_comment": " "
+  },
   "todayDistributions": {
     "chartName": "DSS_HEALTH_NATIONAL_TODAY_USED_QUANTITY",
     "queries": [
@@ -28,6 +151,106 @@
       "colorCode": "#228B22",
       "insightInterval": "day"
     },
+    "_comment": " "
+  },
+  "householdDistributedCoverage": {
+    "chartName": "DSS_HEALTH_OVERVIEW_TOTAL_COVERAGE_HOUSEHOLD_VISITS_PROVINCE_BURUNDI",
+    "queries": [
+      {
+        "module": "COMMON",
+        "dateRefField": "",
+        "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
+        "indexName": "household-index-v1",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"FILTER\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.additionalDetails.status.keyword\":\"CLOSED_HOUSEHOLD\"}},{\"terms\":{\"Data.additionalDetails.communityKey.keyword\":[\"refugee_camps\",\"special_groups\"]}}]}},\"aggs\":{\"Total visits\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}}}}}}"
+      },
+      {
+        "module": "COMMON",
+        "dateRefField": "",
+        "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"projectTypeId\": \"Data.projectTypeId.keyword\"}",
+        "indexName": "project-task-index-v1",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Households Distributed\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.deliveredTo.keyword\":\"HOUSEHOLD\"}},{\"term\":{\"Data.administrationStatus.keyword\":\"ADMINISTRATION_SUCCESS\"}}],\"must_not\":[{\"terms\":{\"Data.additionalDetails.communityKey.keyword\":[\"refugee_camps\",\"special_groups\"]}}]}},\"aggs\":{\"distributions\":{\"value_count\":{\"field\":\"Data.id.keyword\"}}}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "percentage",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "action": "percentage",
+    "aggregationPaths": [
+      "Households Distributed",
+      "Total visits"
+    ],
+    "postAggregationTheory": "",
+    "insight": {
+      "chartResponseMap": "householdDistributedCoverage",
+      "action": "differenceOfNumbers",
+      "upwardIndicator": "positive",
+      "downwardIndicator": "negative",
+      "textMessage": "$indicator$value% than last $insightInterval",
+      "colorCode": "#228B22",
+      "insightInterval": "dateRange"
+    },
+    "_comment": " "
+  },
+  "populationDistributedCoverage": {
+    "chartName": "DSS_HEALTH_OVERVIEW_TOTAL_COVERAGE_HOUSEHOLD_VISITS_PROVINCE_BURUNDI",
+    "queries": [
+      {
+        "module": "COMMON",
+        "dateRefField": "",
+        "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
+        "indexName": "household-index-v1",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"FILTER\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"Data.additionalDetails.status.keyword\":\"CLOSED_HOUSEHOLD\"}},{\"terms\":{\"Data.additionalDetails.communityKey.keyword\":[\"refugee_camps\",\"special_groups\"]}}]}},\"aggs\":{\"Population visited\":{\"sum\":{\"field\":\"Data.household.memberCount\"}}}}}}"
+      },
+      {
+        "module": "COMMON",
+        "dateRefField": "",
+        "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"projectTypeId\": \"Data.projectTypeId.keyword\"}",
+        "indexName": "project-task-index-v1",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Population Covered\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.deliveredTo.keyword\":\"HOUSEHOLD\"}},{\"term\":{\"Data.administrationStatus.keyword\":\"ADMINISTRATION_SUCCESS\"}}],\"must_not\":[{\"terms\":{\"Data.additionalDetails.communityKey.keyword\":[\"refugee_camps\",\"special_groups\"]}}]}},\"aggs\":{\"distributions\":{\"sum\":{\"field\":\"Data.memberCount\"}}}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "percentage",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "action": "percentage",
+    "aggregationPaths": [
+      "Population Covered",
+      "Population visited"
+    ],
+    "postAggregationTheory": "",
+    "insight": {
+      "chartResponseMap": "populationDistributedCoverage",
+      "action": "differenceOfNumbers",
+      "upwardIndicator": "positive",
+      "downwardIndicator": "negative",
+      "textMessage": "$indicator$value% than last $insightInterval",
+      "colorCode": "#228B22",
+      "insightInterval": "dateRange"
+    },
+    "_comment": " "
+  },
+  "bednetsDistributedToSpecialGroups": {
+    "chartName": "DSS_HEALTH_NATIONAL_TOTAL_USED_QUANTITY",
+    "queries": [
+      {
+        "module": "COMMON",
+        "dateRefField": "",
+        "requestQueryMap": "{\"projectTypeId\": \"Data.projectTypeId.keyword\"}",
+        "indexName": "project-task-index-v1",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Total Distributions\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.deliveredTo.keyword\":\"HOUSEHOLD\"}},{\"term\":{\"Data.administrationStatus.keyword\":\"ADMINISTRATION_SUCCESS\"}},{\"terms\":{\"Data.additionalDetails.communityKey.keyword\":[\"special_groups\"]}}]}},\"aggs\":{\"distributions\":{\"sum\":{\"field\":\"Data.quantity\"}}}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "action": "",
+    "aggregationPaths": [
+      "Total Distributions"
+    ],
+    "insight": {},
     "_comment": " "
   },
   "totalDistributions": {

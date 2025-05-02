@@ -225,6 +225,96 @@
         },
         {
           "row": 3,
+          "name": "DSS_NATIONAL_HEALTH",
+          "vizArray": [
+            {
+              "id": 17011,
+              "name": "DSS_HEALTH_NATIONAL_DISTRIBUTIONS",
+              "label": "DSS_HEALTH_NATIONAL_DISTRIBUTIONS",
+              "vizType": "stacked-collection",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "householdsDistributed",
+                  "name": "DSS_HEALTH_NATIONAL_HOUSEHOLDS_DISTRIBUTED_TODAY_BURUNDI",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "populationDistributed",
+                  "name": "DSS_HEALTH_NATIONAL_POPULATION_DISTRIBUTED_TODAY_BURUNDI",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "householdsDistributedCumulative",
+                  "name": "DSS_HEALTH_NATIONAL_HOUSEHOLDS_DISTRIBUTED_CUMULATIVE_BURUNDI",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "populationDistributedCumulative",
+                  "name": "DSS_HEALTH_NATIONAL_POPULATION_DISTRIBUTED_CUMULATIVE_BURUNDI",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 17031,
+              "name": "DSS_HEALTH_NATIONAL_DISTRIBUTIONS",
+              "label": "DSS_HEALTH_NATIONAL_DISTRIBUTIONS",
+              "vizType": "stacked-collection",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "householdDistributedCoverage",
+                  "name": "DSS_HEALTH_NATIONAL_HOUSEHOLDS_DISTRIBUTED_COVERAGE",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "populationDistributedCoverage",
+                  "name": "DSS_HEALTH_NATIONAL_POPULATION_DISTRIBUTED_COVERAGE",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "totalDistributions",
+                  "name": "DSS_HEALTH_NATIONAL_TOTAL_BEDNETS_DISTRIBUTED",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "bednetsDistributedToSpecialGroups",
+                  "name": "DSS_HEALTH_NATIONAL_TOTAL_BEDNETS_DISTRIBUTED_TO_SPECIAL_GROUPS",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 4,
           "name": "DSS_COVERAGE_BY_PROVINCE",
           "vizArray": [
             {
@@ -266,7 +356,7 @@
           ]
         },
         {
-          "row": 4,
+          "row": 5,
           "name": "DSS_COVERAGE_BY_PROVINCE",
           "vizArray": [
             {
@@ -577,6 +667,96 @@
           "name": "DSS_HEALTH_OVERVIEW",
           "vizArray": [
             {
+              "id": 27011,
+              "name": "DSS_HEALTH_NATIONAL_DISTRIBUTIONS",
+              "label": "DSS_HEALTH_NATIONAL_DISTRIBUTIONS",
+              "vizType": "stacked-collection",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "householdsDistributed",
+                  "name": "DSS_HEALTH_NATIONAL_HOUSEHOLDS_DISTRIBUTED_TODAY_BURUNDI",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "populationDistributed",
+                  "name": "DSS_HEALTH_NATIONAL_POPULATION_DISTRIBUTED_TODAY_BURUNDI",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "householdsDistributedCumulative",
+                  "name": "DSS_HEALTH_NATIONAL_HOUSEHOLDS_DISTRIBUTED_CUMULATIVE_BURUNDI",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "populationDistributedCumulative",
+                  "name": "DSS_HEALTH_NATIONAL_POPULATION_DISTRIBUTED_CUMULATIVE_BURUNDI",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 27031,
+              "name": "DSS_HEALTH_NATIONAL_DISTRIBUTIONS",
+              "label": "DSS_HEALTH_NATIONAL_DISTRIBUTIONS",
+              "vizType": "stacked-collection",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "householdDistributedCoverage",
+                  "name": "DSS_HEALTH_NATIONAL_HOUSEHOLDS_DISTRIBUTED_COVERAGE",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "populationDistributedCoverage",
+                  "name": "DSS_HEALTH_NATIONAL_POPULATION_DISTRIBUTED_COVERAGE",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "totalDistributions",
+                  "name": "DSS_HEALTH_NATIONAL_TOTAL_BEDNETS_DISTRIBUTED",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                },
+                {
+                  "id": "bednetsDistributedToSpecialGroups",
+                  "name": "DSS_HEALTH_NATIONAL_TOTAL_BEDNETS_DISTRIBUTED_TO_SPECIAL_GROUPS",
+                  "code": "",
+                  "chartType": "metric",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "name": "DSS_HEALTH_OVERVIEW",
+          "vizArray": [
+            {
               "id": 3062,
               "name": "DSS_HEALTH_OVERVIEW_TOTAL_COMPLAINTS",
               "label": "DSS_HEALTH_OVERVIEW_TOTAL_COMPLAINTS",
@@ -597,7 +777,7 @@
           ]
         },
         {
-          "row": 4,
+          "row": 5,
           "name": "DSS_HEALTH_OVERVIEW",
           "vizArray": [
             {
@@ -621,7 +801,7 @@
           ]
         },
         {
-          "row": 5,
+          "row": 6,
           "name": "DSS_HEALTH_OVERVIEW",
           "vizArray": [
             {
