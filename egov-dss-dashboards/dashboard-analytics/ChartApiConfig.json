@@ -10706,7 +10706,7 @@
         "actionName": "PercentageComputedField",
         "fields": [
           "Bednets distributed count",
-          "Overall Bednet target"
+          "Bednet Target"
         ],
         "newField": "Target Achievement Bednets Distributed",
         "_comments": ""
