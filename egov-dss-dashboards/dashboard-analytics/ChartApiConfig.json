@@ -295,7 +295,6 @@
     "insight": {},
     "_comment": " "
   },
-
   "complaintsByHealthDistrictTotalBurundi": {
     "chartName": "DSS_HEALTH_COMPLAINTS_BY_HEALTH_DISTRICT_TOTAL_BURUNDI",
     "queries": [
@@ -319,11 +318,12 @@
     ],
     "documentType": "_doc",
     "action": "",
-    "aggregationPaths": ["Complaints"],
+    "aggregationPaths": [
+      "Complaints"
+    ],
     "insight": {},
     "_comment": " "
   },
-
   "complaintsByMunicipalityTotalBurundi": {
     "kind": "drillDown",
     "chartName": "DSS_HEALTH_COMPLAINTS_BY_MUNICIPALITY_TOTAL_BURUNDI",
@@ -348,11 +348,12 @@
     ],
     "documentType": "_doc",
     "action": "",
-    "aggregationPaths": ["Complaints"],
+    "aggregationPaths": [
+      "Complaints"
+    ],
     "insight": {},
     "_comment": " "
   },
-
   "complaintsByAreaOfResponsibilityTotalBurundi": {
     "kind": "drillDown",
     "chartName": "DSS_HEALTH_COMPLAINTS_BY_AREA_OF_RESPONSIBILITY_TOTAL_BURUNDI",
@@ -377,11 +378,12 @@
     ],
     "documentType": "_doc",
     "action": "",
-    "aggregationPaths": ["Complaints"],
+    "aggregationPaths": [
+      "Complaints"
+    ],
     "insight": {},
     "_comment": " "
   },
-
   "complaintsByHillsTotalBurundi": {
     "kind": "drillDown",
     "chartName": "DSS_HEALTH_COMPLAINTS_BY_HILLS_TOTAL_BURUNDI",
@@ -406,11 +408,12 @@
     ],
     "documentType": "_doc",
     "action": "",
-    "aggregationPaths": ["Complaints"],
+    "aggregationPaths": [
+      "Complaints"
+    ],
     "insight": {},
     "_comment": " "
   },
-
   "complaintsBySubHillsTotalBurundi": {
     "kind": "drillDown",
     "chartName": "DSS_HEALTH_COMPLAINTS_BY_SUB_HILLS_TOTAL_BURUNDI",
@@ -435,7 +438,9 @@
     ],
     "documentType": "_doc",
     "action": "",
-    "aggregationPaths": ["Complaints"],
+    "aggregationPaths": [
+      "Complaints"
+    ],
     "insight": {},
     "_comment": " "
   },
@@ -1742,7 +1747,7 @@
     "valueType": "number",
     "drillChart": "none",
     "documentType": "_doc",
-    "isCappedTillToday" : true,
+    "isCappedTillToday": true,
     "action": "",
     "aggregationPaths": [
       "total vouchers distributed"
@@ -1819,7 +1824,7 @@
     "valueType": "number",
     "drillChart": "none",
     "documentType": "_doc",
-    "isCappedTillToday" : true,
+    "isCappedTillToday": true,
     "action": "",
     "aggregationPaths": [
       "Total vouchers redeemed"
@@ -2088,9 +2093,9 @@
     "sort": "sortKeyAsc",
     "_comment": " "
   },
-  "coverageByProvinceBurundi" : {
+  "coverageByProvinceBurundi": {
     "chartName": "DSS_COVERAGE_BY_PROVINCE_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "",
@@ -2117,7 +2122,7 @@
         "dateRefField": "",
         "requestQueryMap": "{\"projectTypeId\": \"Data.projectTypeId.keyword\"}",
         "indexName": "project-index-v1",
-        "aggrQuery" : "{\"size\":0,\"aggs\":{\"AGGS\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.targetType.keyword\":\"HOUSEHOLD\"}},{\"exists\":{\"field\":\"Data.boundaryHierarchy.province.keyword\"}}],\"must_not\":[{\"exists\":{\"field\":\"Data.boundaryHierarchy.district.keyword\"}}]}},\"aggs\":{\"Project Start and End Dates\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.province.keyword\"},\"aggs\":{\"Start Date\":{\"min\":{\"field\":\"Data.startDate\"}},\"End Date\":{\"max\":{\"field\":\"Data.endDate\"}}}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"AGGS\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.targetType.keyword\":\"HOUSEHOLD\"}},{\"exists\":{\"field\":\"Data.boundaryHierarchy.province.keyword\"}}],\"must_not\":[{\"exists\":{\"field\":\"Data.boundaryHierarchy.district.keyword\"}}]}},\"aggs\":{\"Project Start and End Dates\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.province.keyword\"},\"aggs\":{\"Start Date\":{\"min\":{\"field\":\"Data.startDate\"}},\"End Date\":{\"max\":{\"field\":\"Data.endDate\"}}}}}}}}"
       }
     ],
     "chartType": "xtable",
@@ -2216,7 +2221,7 @@
     "insight": {},
     "_comment": " "
   },
-  "housesWithMoreThanTwentyMembersByMunicipalityBurundi" : {
+  "housesWithMoreThanTwentyMembersByMunicipalityBurundi": {
     "chartName": "DSS_HOUSE_WITH_MORE_THAN_TWENTY_MEMBERS_MUNICIPALITY_BURUNDI",
     "queries": [
       {
@@ -2244,7 +2249,7 @@
     "insight": {},
     "_comment": " "
   },
-  "housesWithMoreThanTwentyMembersByAreaOfResponsibilityBurundi" : {
+  "housesWithMoreThanTwentyMembersByAreaOfResponsibilityBurundi": {
     "chartName": "DSS_HOUSE_WITH_MORE_THAN_TWENTY_MEMBERS_AREA_OF_RESPONSIBILITY_BURUNDI",
     "queries": [
       {
@@ -2272,7 +2277,7 @@
     "insight": {},
     "_comment": " "
   },
-  "housesWithMoreThanTwentyMembersByHillsBurundi" : {
+  "housesWithMoreThanTwentyMembersByHillsBurundi": {
     "chartName": "DSS_HOUSE_WITH_MORE_THAN_TWENTY_MEMBERS_HILLS_BURUNDI",
     "queries": [
       {
@@ -2300,7 +2305,7 @@
     "insight": {},
     "_comment": " "
   },
-  "housesWithMoreThanTwentyMembersBySubHillsBurundi" : {
+  "housesWithMoreThanTwentyMembersBySubHillsBurundi": {
     "chartName": "DSS_HOUSE_WITH_MORE_THAN_TWENTY_MEMBERS_SUB_HILLS_BURUNDI",
     "queries": [
       {
@@ -2356,7 +2361,7 @@
     "insight": {},
     "_comment": " "
   },
-  "locationNotEnabledByMunicipalityBurunndi" : {
+  "locationNotEnabledByMunicipalityBurunndi": {
     "chartName": "DSS_HEALTH_LOCATION_NOT_ENABLED_MUNICIPALITY_BURUNDI",
     "queries": [
       {
@@ -2384,7 +2389,7 @@
     "insight": {},
     "_comment": " "
   },
-  "locationNotEnabledByAreaOfResponsibilityBurunndi" : {
+  "locationNotEnabledByAreaOfResponsibilityBurunndi": {
     "chartName": "DSS_HEALTH_LOCATION_NOT_ENABLED_AREA_OF_RESPONSIBILITY_BURUNDI",
     "queries": [
       {
@@ -2412,7 +2417,7 @@
     "insight": {},
     "_comment": " "
   },
-  "locationNotEnabledByHillsBurunndi" : {
+  "locationNotEnabledByHillsBurunndi": {
     "chartName": "DSS_HEALTH_LOCATION_NOT_ENABLED_HILLS_BURUNDI",
     "queries": [
       {
@@ -3304,7 +3309,7 @@
     "_comment": " "
   },
   "incompleteRecordsByMunicipalityBurundi": {
-    "kind" : "drillDown",
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_INCOMPLETE_RECORDS_BURUNDI",
     "queries": [
       {
@@ -3355,8 +3360,8 @@
     "insight": {},
     "_comment": " "
   },
-  "incompleteRecordsByAreaOfResponsibilityBurundi" : {
-    "kind" : "drillDown",
+  "incompleteRecordsByAreaOfResponsibilityBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_INCOMPLETE_RECORDS_BURUNDI",
     "queries": [
       {
@@ -3407,8 +3412,8 @@
     "insight": {},
     "_comment": " "
   },
-  "incompleteRecordsByHillsBurundi" : {
-    "kind" : "drillDown",
+  "incompleteRecordsByHillsBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_INCOMPLETE_RECORDS_BURUNDI",
     "queries": [
       {
@@ -3459,8 +3464,8 @@
     "insight": {},
     "_comment": " "
   },
-  "incompleteRecordsBySubHillsBurundi" : {
-    "kind" : "drillDown",
+  "incompleteRecordsBySubHillsBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_INCOMPLETE_RECORDS_BURUNDI",
     "queries": [
       {
@@ -3511,7 +3516,7 @@
     "insight": {},
     "_comment": " "
   },
-  "entriesDoneByWMsHealthDistrictBurundi" : {
+  "entriesDoneByWMsHealthDistrictBurundi": {
     "chartName": "DSS_HEALTH_ENTRIES_DONE_BY_WMS_HEALTH_DISTRICT",
     "queries": [
       {
@@ -3540,8 +3545,8 @@
       }
     ]
   },
-  "entriesDoneByWMsMunicipalityBurundi" : {
-    "kind" : "drillDown",
+  "entriesDoneByWMsMunicipalityBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_ENTRIES_DONE_BY_WMS_MUNICIPALITY",
     "queries": [
       {
@@ -3570,8 +3575,8 @@
       }
     ]
   },
-  "entriesDoneByWMsAreaOfResponsibilityBurundi" : {
-    "kind" : "drillDown",
+  "entriesDoneByWMsAreaOfResponsibilityBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_ENTRIES_DONE_BY_WMS_AREA_OF_RESPONSIBILITY",
     "queries": [
       {
@@ -3600,8 +3605,8 @@
       }
     ]
   },
-  "entriesDoneByWMsHillsBurundi" : {
-    "kind" : "drillDown",
+  "entriesDoneByWMsHillsBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_ENTRIES_DONE_BY_WMS_HILLS",
     "queries": [
       {
@@ -3630,8 +3635,8 @@
       }
     ]
   },
-  "entriesDoneByWMsSubHillsBurundi" : {
-    "kind" : "drillDown",
+  "entriesDoneByWMsSubHillsBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_ENTRIES_DONE_BY_WMS_SUBHILLS",
     "queries": [
       {
@@ -3693,7 +3698,7 @@
         "key": "district"
       }
     ],
-    "plotLabel" : "none",
+    "plotLabel": "none",
     "insight": {},
     "_comment": " "
   },
@@ -3730,7 +3735,7 @@
         "key": "municipality"
       }
     ],
-    "plotLabel" : "none",
+    "plotLabel": "none",
     "insight": {},
     "_comment": " "
   },
@@ -4464,15 +4469,15 @@
     "insight": {},
     "_comment": " "
   },
-  "suspectedFraudsByHealthDistrictBurundi" : {
-    "chartName" : "DSS_HEALTH_SUSPECTED_FRAUDS_BURUNDI",
-    "queries" : [
+  "suspectedFraudsByHealthDistrictBurundi": {
+    "chartName": "DSS_HEALTH_SUSPECTED_FRAUDS_BURUNDI",
+    "queries": [
       {
-        "module" : "COMMON",
+        "module": "COMMON",
         "dateRefField": "Data.household.clientAuditDetails.lastModifiedTime",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery" : "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.district.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_sprayed_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.district.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_sprayed_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
       }
     ],
     "chartType": "line",
@@ -4492,16 +4497,16 @@
     "insight": {},
     "_comment": " "
   },
-  "suspectedFraudsByMunicipalityBurundi" : {
-    "kind" : "drillDown",
-    "chartName" : "DSS_HEALTH_SUSPECTED_FRAUDS_BURUNDI",
-    "queries" : [
+  "suspectedFraudsByMunicipalityBurundi": {
+    "kind": "drillDown",
+    "chartName": "DSS_HEALTH_SUSPECTED_FRAUDS_BURUNDI",
+    "queries": [
       {
-        "module" : "COMMON",
+        "module": "COMMON",
         "dateRefField": "Data.household.clientAuditDetails.lastModifiedTime",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery" : "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.municipality.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_sprayed_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.municipality.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_sprayed_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
       }
     ],
     "chartType": "line",
@@ -4521,16 +4526,16 @@
     "insight": {},
     "_comment": " "
   },
-  "suspectedFraudsByAreaOfResponsibilityBurundi" : {
-    "kind" : "drillDown",
-    "chartName" : "DSS_HEALTH_SUSPECTED_FRAUDS_BURUNDI",
-    "queries" : [
+  "suspectedFraudsByAreaOfResponsibilityBurundi": {
+    "kind": "drillDown",
+    "chartName": "DSS_HEALTH_SUSPECTED_FRAUDS_BURUNDI",
+    "queries": [
       {
-        "module" : "COMMON",
+        "module": "COMMON",
         "dateRefField": "Data.household.clientAuditDetails.lastModifiedTime",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"municipality\": \"Data.boundaryHierarchy.municipality.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery" : "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.areaOfResponsibility.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_sprayed_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.areaOfResponsibility.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_sprayed_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
       }
     ],
     "chartType": "line",
@@ -4550,16 +4555,16 @@
     "insight": {},
     "_comment": " "
   },
-  "suspectedFraudsByHillsBurundi" : {
-    "kind" : "drillDown",
-    "chartName" : "DSS_HEALTH_SUSPECTED_FRAUDS_BURUNDI",
-    "queries" : [
+  "suspectedFraudsByHillsBurundi": {
+    "kind": "drillDown",
+    "chartName": "DSS_HEALTH_SUSPECTED_FRAUDS_BURUNDI",
+    "queries": [
       {
-        "module" : "COMMON",
+        "module": "COMMON",
         "dateRefField": "Data.household.clientAuditDetails.lastModifiedTime",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"municipality\": \"Data.boundaryHierarchy.municipality.keyword\", \"areaOfResponsibility\": \"Data.boundaryHierarchy.areaOfResponsibility.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery" : "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.hills.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_sprayed_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.hills.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_sprayed_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
       }
     ],
     "chartType": "line",
@@ -4579,16 +4584,16 @@
     "insight": {},
     "_comment": " "
   },
-  "suspectedFraudsBySubHillsBurundi" : {
-    "kind" : "drillDown",
-    "chartName" : "DSS_HEALTH_SUSPECTED_FRAUDS_BURUNDI",
-    "queries" : [
+  "suspectedFraudsBySubHillsBurundi": {
+    "kind": "drillDown",
+    "chartName": "DSS_HEALTH_SUSPECTED_FRAUDS_BURUNDI",
+    "queries": [
       {
-        "module" : "COMMON",
+        "module": "COMMON",
         "dateRefField": "Data.household.clientAuditDetails.lastModifiedTime",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"municipality\": \"Data.boundaryHierarchy.municipality.keyword\", \"areaOfResponsibility\": \"Data.boundaryHierarchy.areaOfResponsibility.keyword\", \"hills\": \"Data.boundaryHierarchy.hills.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery" : "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.subHills.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_sprayed_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.subHills.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_sprayed_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
       }
     ],
     "chartType": "line",
@@ -5237,11 +5242,11 @@
         "aggrQuery": "{\"size\":0,\"aggs\":{\"FILTER\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.deliveredTo.keyword\":\"HOUSEHOLD\"}},{\"terms\":{\"Data.administrationStatus.keyword\":[\"ADMINISTRATION_SUCCESS\",\"CLOSED_HOUSEHOLD\"]}}]}},\"aggs\":{\"Total Houses Visited\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.district.keyword\",\"size\":500},\"aggs\":{\"negative_households_visited_count\":{\"scripted_metric\":{\"params\":{\"fieldName\":\"Data.householdId.keyword\"},\"init_script\":\"state.list = []\",\"map_script\":\"if(doc[params.fieldName].size() > 0) \\nstate.list.add(doc[params.fieldName].value);\",\"combine_script\":\"return state.list;\",\"reduce_script\":\"Map uniqueValueMap = new HashMap(); \\n        int count = 0;\\n        for(shardList in states) {\\n          if(shardList != null) { \\n            for(key in shardList) {\\n              if(!uniqueValueMap.containsKey(key)) {\\n                count +=1;\\n                uniqueValueMap.put(key, key);\\n              }\\n            }\\n          }\\n        } \\n        return count * -1;\"}}}}}}}}"
       },
       {
-        "module" : "COMMON",
+        "module": "COMMON",
         "dateRefField": "",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery" : "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.district.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_registered_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.district.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_registered_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
       }
     ],
     "filterKeys": [
@@ -5322,8 +5327,8 @@
     "sort": "sortKeyAsc",
     "_comment": " "
   },
-  "dataQualitySummaryMunicipalityBurundi" : {
-    "kind" :"drillDown",
+  "dataQualitySummaryMunicipalityBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_DATA_QUALITY_SUMMARY_MUNICIPALITY_BURUNDI",
     "queries": [
       {
@@ -5348,11 +5353,11 @@
         "aggrQuery": "{\"size\":0,\"aggs\":{\"FILTER\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.deliveredTo.keyword\":\"HOUSEHOLD\"}},{\"terms\":{\"Data.administrationStatus.keyword\":[\"ADMINISTRATION_SUCCESS\",\"CLOSED_HOUSEHOLD\"]}}]}},\"aggs\":{\"Total Houses Visited\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.municipality.keyword\",\"size\":500},\"aggs\":{\"negative_households_visited_count\":{\"scripted_metric\":{\"params\":{\"fieldName\":\"Data.householdId.keyword\"},\"init_script\":\"state.list = []\",\"map_script\":\"if(doc[params.fieldName].size() > 0) \\nstate.list.add(doc[params.fieldName].value);\",\"combine_script\":\"return state.list;\",\"reduce_script\":\"Map uniqueValueMap = new HashMap(); \\n        int count = 0;\\n        for(shardList in states) {\\n          if(shardList != null) { \\n            for(key in shardList) {\\n              if(!uniqueValueMap.containsKey(key)) {\\n                count +=1;\\n                uniqueValueMap.put(key, key);\\n              }\\n            }\\n          }\\n        } \\n        return count * -1;\"}}}}}}}}"
       },
       {
-        "module" : "COMMON",
+        "module": "COMMON",
         "dateRefField": "",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery" : "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.municipality.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_registered_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.municipality.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_registered_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
       }
     ],
     "filterKeys": [
@@ -5433,8 +5438,8 @@
     "sort": "sortKeyAsc",
     "_comment": " "
   },
-  "dataQualitySummaryAreaOfResponsibilityBurundi" : {
-    "kind" :"drillDown",
+  "dataQualitySummaryAreaOfResponsibilityBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_DATA_QUALITY_SUMMARY_AREA_OF_RESPONSIBILITY_BURUNDI",
     "queries": [
       {
@@ -5459,11 +5464,11 @@
         "aggrQuery": "{\"size\":0,\"aggs\":{\"FILTER\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.deliveredTo.keyword\":\"HOUSEHOLD\"}},{\"terms\":{\"Data.administrationStatus.keyword\":[\"ADMINISTRATION_SUCCESS\",\"CLOSED_HOUSEHOLD\"]}}]}},\"aggs\":{\"Total Houses Visited\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.areaOfResponsibility.keyword\",\"size\":500},\"aggs\":{\"negative_households_visited_count\":{\"scripted_metric\":{\"params\":{\"fieldName\":\"Data.householdId.keyword\"},\"init_script\":\"state.list = []\",\"map_script\":\"if(doc[params.fieldName].size() > 0) \\nstate.list.add(doc[params.fieldName].value);\",\"combine_script\":\"return state.list;\",\"reduce_script\":\"Map uniqueValueMap = new HashMap(); \\n        int count = 0;\\n        for(shardList in states) {\\n          if(shardList != null) { \\n            for(key in shardList) {\\n              if(!uniqueValueMap.containsKey(key)) {\\n                count +=1;\\n                uniqueValueMap.put(key, key);\\n              }\\n            }\\n          }\\n        } \\n        return count * -1;\"}}}}}}}}"
       },
       {
-        "module" : "COMMON",
+        "module": "COMMON",
         "dateRefField": "",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"municipality\": \"Data.boundaryHierarchy.municipality.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery" : "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.areaOfResponsibility.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_registered_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.areaOfResponsibility.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_registered_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
       }
     ],
     "filterKeys": [
@@ -5544,8 +5549,8 @@
     "sort": "sortKeyAsc",
     "_comment": " "
   },
-  "dataQualitySummaryHillsBurundi" : {
-    "kind" :"drillDown",
+  "dataQualitySummaryHillsBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_DATA_QUALITY_SUMMARY_HILLS_BURUNDI",
     "queries": [
       {
@@ -5570,11 +5575,11 @@
         "aggrQuery": "{\"size\":0,\"aggs\":{\"FILTER\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.deliveredTo.keyword\":\"HOUSEHOLD\"}},{\"terms\":{\"Data.administrationStatus.keyword\":[\"ADMINISTRATION_SUCCESS\",\"CLOSED_HOUSEHOLD\"]}}]}},\"aggs\":{\"Total Houses Visited\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.hills.keyword\",\"size\":500},\"aggs\":{\"negative_households_visited_count\":{\"scripted_metric\":{\"params\":{\"fieldName\":\"Data.householdId.keyword\"},\"init_script\":\"state.list = []\",\"map_script\":\"if(doc[params.fieldName].size() > 0) \\nstate.list.add(doc[params.fieldName].value);\",\"combine_script\":\"return state.list;\",\"reduce_script\":\"Map uniqueValueMap = new HashMap(); \\n        int count = 0;\\n        for(shardList in states) {\\n          if(shardList != null) { \\n            for(key in shardList) {\\n              if(!uniqueValueMap.containsKey(key)) {\\n                count +=1;\\n                uniqueValueMap.put(key, key);\\n              }\\n            }\\n          }\\n        } \\n        return count * -1;\"}}}}}}}}"
       },
       {
-        "module" : "COMMON",
+        "module": "COMMON",
         "dateRefField": "",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"municipality\": \"Data.boundaryHierarchy.municipality.keyword\", \"areaOfResponsibility\": \"Data.boundaryHierarchy.areaOfResponsibility.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery" : "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.hills.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_registered_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.hills.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_registered_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
       }
     ],
     "filterKeys": [
@@ -5655,8 +5660,8 @@
     "sort": "sortKeyAsc",
     "_comment": " "
   },
-  "dataQualitySummarySubHillsBurundi" : {
-    "kind" :"drillDown",
+  "dataQualitySummarySubHillsBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_DATA_QUALITY_SUMMARY_SUB_HILLS_BURUNDI",
     "queries": [
       {
@@ -5681,11 +5686,11 @@
         "aggrQuery": "{\"size\":0,\"aggs\":{\"FILTER\":{\"filter\":{\"bool\":{\"must\":[{\"term\":{\"Data.deliveredTo.keyword\":\"HOUSEHOLD\"}},{\"terms\":{\"Data.administrationStatus.keyword\":[\"ADMINISTRATION_SUCCESS\",\"CLOSED_HOUSEHOLD\"]}}]}},\"aggs\":{\"Total Houses Visited\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.subHills.keyword\",\"size\":500},\"aggs\":{\"negative_households_visited_count\":{\"scripted_metric\":{\"params\":{\"fieldName\":\"Data.householdId.keyword\"},\"init_script\":\"state.list = []\",\"map_script\":\"if(doc[params.fieldName].size() > 0) \\nstate.list.add(doc[params.fieldName].value);\",\"combine_script\":\"return state.list;\",\"reduce_script\":\"Map uniqueValueMap = new HashMap(); \\n        int count = 0;\\n        for(shardList in states) {\\n          if(shardList != null) { \\n            for(key in shardList) {\\n              if(!uniqueValueMap.containsKey(key)) {\\n                count +=1;\\n                uniqueValueMap.put(key, key);\\n              }\\n            }\\n          }\\n        } \\n        return count * -1;\"}}}}}}}}"
       },
       {
-        "module" : "COMMON",
+        "module": "COMMON",
         "dateRefField": "",
         "requestQueryMap": "{\"province\": \"Data.boundaryHierarchy.province.keyword\", \"district\": \"Data.boundaryHierarchy.district.keyword\", \"municipality\": \"Data.boundaryHierarchy.municipality.keyword\", \"areaOfResponsibility\": \"Data.boundaryHierarchy.areaOfResponsibility.keyword\", \"hills\": \"Data.boundaryHierarchy.hills.keyword\", \"projectTypeId\": \"Data.additionalDetails.projectTypeId.keyword\"}",
         "indexName": "household-index-v1",
-        "aggrQuery" : "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.subHills.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_registered_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Suspected Frauds\":{\"terms\":{\"field\":\"Data.boundaryHierarchy.subHills.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\"},\"aggs\":{\"users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":1000},\"aggs\":{\"house_registered_count\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}},\"users_with_more_than_15\":{\"bucket_selector\":{\"buckets_path\":{\"houseRegistered\":\"house_registered_count\"},\"script\":\"params.houseRegistered > 15\"}}}},\"number_of_users_registered_more_than_15\":{\"bucket_script\":{\"buckets_path\":{\"count_users\":\"users._bucket_count\"},\"script\":\"params.count_users\"}}}},\"total_users_registered_more_than_15\":{\"sum_bucket\":{\"buckets_path\":\"daily_users>number_of_users_registered_more_than_15\"}}}}}}"
       }
     ],
     "filterKeys": [
@@ -5978,8 +5983,8 @@
     "insight": {},
     "_comment": " "
   },
-  "housesVisitedBarChartMunicipalityBurundi" : {
-    "kind" :"drillDown",
+  "housesVisitedBarChartMunicipalityBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_HOUSES_VISITED_MUNICIPALITY_BURUNDI",
     "queries": [
       {
@@ -6007,8 +6012,8 @@
     "insight": {},
     "_comment": " "
   },
-  "housesVisitedBarChartMunicipalityPercentBurundi" : {
-    "kind" :"drillDown",
+  "housesVisitedBarChartMunicipalityPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_HOUSES_VISITED_MUNICIPALITY_PERCENT_BURUNDI",
     "queries": [
       {
@@ -6058,8 +6063,8 @@
     "insight": {},
     "_comment": " "
   },
-  "housesVisitedBarChartAreaOfResponsibilityBurundi" : {
-    "kind" :"drillDown",
+  "housesVisitedBarChartAreaOfResponsibilityBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_HOUSES_VISITED_AREA_OF_RESPONSIBILITY_BURUNDI",
     "queries": [
       {
@@ -6087,8 +6092,8 @@
     "insight": {},
     "_comment": " "
   },
-  "housesVisitedBarChartAreaOfResponsibilityPercentBurundi" : {
-    "kind" :"drillDown",
+  "housesVisitedBarChartAreaOfResponsibilityPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_HOUSES_VISITED_AREA_OF_RESPONSIBILITY_PERCENT_BURUNDI",
     "queries": [
       {
@@ -6138,8 +6143,8 @@
     "insight": {},
     "_comment": " "
   },
-  "housesVisitedBarChartHillsBurundi" : {
-    "kind" :"drillDown",
+  "housesVisitedBarChartHillsBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_HOUSES_VISITED_HILLS_BURUNDI",
     "queries": [
       {
@@ -6167,8 +6172,8 @@
     "insight": {},
     "_comment": " "
   },
-  "housesVisitedBarChartHillsPercentBurundi" : {
-    "kind" :"drillDown",
+  "housesVisitedBarChartHillsPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_HOUSES_VISITED_HILLS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -6218,8 +6223,8 @@
     "insight": {},
     "_comment": " "
   },
-  "housesVisitedBarChartSubHillsBurundi" : {
-    "kind" :"drillDown",
+  "housesVisitedBarChartSubHillsBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_HOUSES_VISITED_SUB_HILLS_BURUNDI",
     "queries": [
       {
@@ -6247,8 +6252,8 @@
     "insight": {},
     "_comment": " "
   },
-  "housesVisitedBarChartSubHillsPercentBurundi" : {
-    "kind" :"drillDown",
+  "housesVisitedBarChartSubHillsPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_HOUSES_VISITED_SUB_HILLS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -6298,7 +6303,7 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredBarChartDistrictBurundi" : {
+  "populationCoveredBarChartDistrictBurundi": {
     "chartName": "DSS_HEALTH_POPULATION_COVERED_DISTRICT_BURUNDI",
     "queries": [
       {
@@ -6376,8 +6381,8 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredBarChartMunicipalityBurundi" : {
-    "kind" :"drillDown",
+  "populationCoveredBarChartMunicipalityBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_POPULATION_COVERED_MUNICIPALITY_BURUNDI",
     "queries": [
       {
@@ -6405,10 +6410,10 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredBarChartMunicipalityPercentBurundi" : {
-    "kind" :"drillDown",
+  "populationCoveredBarChartMunicipalityPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_POPULATION_COVERED_MUNICIPALITY_PERCENT_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.household.clientAuditDetails.lastModifiedTime",
@@ -6456,8 +6461,8 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredBarChartAreaOfResponsibilityBurundi" : {
-    "kind" :"drillDown",
+  "populationCoveredBarChartAreaOfResponsibilityBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_POPULATION_COVERED_AREA_OF_RESPONSIBILITY_BURUNDI",
     "queries": [
       {
@@ -6485,10 +6490,10 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredBarChartAreaOfResponsibilityPercentBurundi" : {
-    "kind" :"drillDown",
+  "populationCoveredBarChartAreaOfResponsibilityPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_POPULATION_COVERED_AREA_OF_RESPONSIBILITY_PERCENT_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.household.clientAuditDetails.lastModifiedTime",
@@ -6536,8 +6541,8 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredBarChartHillsBurundi" : {
-    "kind" :"drillDown",
+  "populationCoveredBarChartHillsBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_POPULATION_COVERED_SUBHILLS_BURUNDI",
     "queries": [
       {
@@ -6565,10 +6570,10 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredBarChartHillsPercentBurundi" : {
-    "kind" :"drillDown",
+  "populationCoveredBarChartHillsPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_POPULATION_COVERED_HILLS_PERCENT_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.household.clientAuditDetails.lastModifiedTime",
@@ -6616,8 +6621,8 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredBarChartSubHillsBurundi" : {
-    "kind" :"drillDown",
+  "populationCoveredBarChartSubHillsBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_POPULATION_COVERED_SUBHILLS_BURUNDI",
     "queries": [
       {
@@ -6645,10 +6650,10 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredBarChartSubHillsPercentBurundi" : {
-    "kind" :"drillDown",
+  "populationCoveredBarChartSubHillsPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_POPULATION_COVERED_SUBHILLS_PERCENT_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.household.clientAuditDetails.lastModifiedTime",
@@ -6696,9 +6701,9 @@
     "insight": {},
     "_comment": " "
   },
-  "closedHouseholdsDistrictBurundi" : {
+  "closedHouseholdsDistrictBurundi": {
     "chartName": "DSS_HEALTH_CLOSED_HOUSEHOLD_DISTRICT_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -6724,7 +6729,7 @@
     "insight": {},
     "_comment": " "
   },
-  "closedHouseholdsDistrictPercentBurundi" : {
+  "closedHouseholdsDistrictPercentBurundi": {
     "chartName": "DSS_HEALTH_CLOSED_HOUSEHOLD_DISTRICT_PERCENTAGE_BURUNDI",
     "queries": [
       {
@@ -6762,10 +6767,10 @@
     "insight": {},
     "_comment": " "
   },
-  "closedHouseholdsMunicipalityBurundi" : {
-    "kind" :"drillDown",
+  "closedHouseholdsMunicipalityBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_CLOSED_HOUSEHOLD_MUNICIPALITY_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -6791,8 +6796,8 @@
     "insight": {},
     "_comment": " "
   },
-  "closedHouseholdsMunicipalityPercentBurundi" : {
-    "kind" :"drillDown",
+  "closedHouseholdsMunicipalityPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_CLOSED_HOUSEHOLD_MUNICIPALITY_PERCENTAGE_BURUNDI",
     "queries": [
       {
@@ -6830,10 +6835,10 @@
     "insight": {},
     "_comment": " "
   },
-  "closedHouseholdsAreaOfResponsibilityBurundi" : {
-    "kind" :"drillDown",
+  "closedHouseholdsAreaOfResponsibilityBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_CLOSED_HOUSEHOLD_AREA_OF_RESPONSIBILITY_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -6859,8 +6864,8 @@
     "insight": {},
     "_comment": " "
   },
-  "closedHouseholdsAreaOfResponsibilityPercentBurundi" : {
-    "kind" :"drillDown",
+  "closedHouseholdsAreaOfResponsibilityPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_CLOSED_HOUSEHOLD_AREA_OF_RESPONSIBILITY_PERCENTAGE_BURUNDI",
     "queries": [
       {
@@ -6898,10 +6903,10 @@
     "insight": {},
     "_comment": " "
   },
-  "closedHouseholdsHillsBurundi" : {
-    "kind" :"drillDown",
+  "closedHouseholdsHillsBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_CLOSED_HOUSEHOLD_HILLS_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -6927,8 +6932,8 @@
     "insight": {},
     "_comment": " "
   },
-  "closedHouseholdsHillsPercentBurundi" : {
-    "kind" :"drillDown",
+  "closedHouseholdsHillsPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_CLOSED_HOUSEHOLD_HILLS_PERCENTAGE_BURUNDI",
     "queries": [
       {
@@ -6966,10 +6971,10 @@
     "insight": {},
     "_comment": " "
   },
-  "closedHouseholdsSubHillsBurundi" : {
-    "kind" :"drillDown",
+  "closedHouseholdsSubHillsBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_CLOSED_HOUSEHOLD_SUBHILLS_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -6995,8 +7000,8 @@
     "insight": {},
     "_comment": " "
   },
-  "closedHouseholdsSubHillsPercentBurundi" : {
-    "kind" :"drillDown",
+  "closedHouseholdsSubHillsPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_CLOSED_HOUSEHOLD_SUBHILLS_PERCENTAGE_BURUNDI",
     "queries": [
       {
@@ -7246,7 +7251,7 @@
       "Distributed Vouchers",
       "Redeemed Vouchers"
     ],
-    "plotLabel" : "none",
+    "plotLabel": "none",
     "filterKeys": [
       {
         "key": "district"
@@ -7283,7 +7288,7 @@
       "Distributed Vouchers",
       "Redeemed Vouchers"
     ],
-    "plotLabel" : "none",
+    "plotLabel": "none",
     "filterKeys": [
       {
         "key": "municipality"
@@ -7320,7 +7325,7 @@
       "Distributed Vouchers",
       "Redeemed Vouchers"
     ],
-    "plotLabel" : "none",
+    "plotLabel": "none",
     "filterKeys": [
       {
         "key": "areaOfResponsibility"
@@ -7357,7 +7362,7 @@
       "Distributed Vouchers",
       "Redeemed Vouchers"
     ],
-    "plotLabel" : "none",
+    "plotLabel": "none",
     "filterKeys": [
       {
         "key": "hills"
@@ -7394,7 +7399,7 @@
       "Distributed Vouchers",
       "Redeemed Vouchers"
     ],
-    "plotLabel" : "none",
+    "plotLabel": "none",
     "filterKeys": [
       {
         "key": "subHills"
@@ -8072,7 +8077,7 @@
     "hideHeaderDenomination": true,
     "_comment": " "
   },
-  "registrationSummaryByMunicipalityBurundi" : {
+  "registrationSummaryByMunicipalityBurundi": {
     "chartName": "DSS_HEALTH_RESGISTRATION_SUMMARY_BY_MUNICIPALITY_BURUNDI",
     "queries": [
       {
@@ -8231,7 +8236,7 @@
     "hideHeaderDenomination": true,
     "_comment": " "
   },
-  "registrationSummaryByAreaOfResponsibilityBurundi" : {
+  "registrationSummaryByAreaOfResponsibilityBurundi": {
     "chartName": "DSS_HEALTH_RESGISTRATION_SUMMARY_BY_AREA_OF_RESPONSIBILITY_BURUNDI",
     "queries": [
       {
@@ -8390,7 +8395,7 @@
     "hideHeaderDenomination": true,
     "_comment": " "
   },
-  "registrationSummaryByHillsBurundi" : {
+  "registrationSummaryByHillsBurundi": {
     "chartName": "DSS_HEALTH_RESGISTRATION_SUMMARY_BY_HILLS_BURUNDI",
     "queries": [
       {
@@ -8549,7 +8554,7 @@
     "hideHeaderDenomination": true,
     "_comment": " "
   },
-  "registrationSummaryBySubHillsBurundi" : {
+  "registrationSummaryBySubHillsBurundi": {
     "chartName": "DSS_HEALTH_RESGISTRATION_SUMMARY_BY_SUBHILLS_BURUNDI",
     "queries": [
       {
@@ -9106,9 +9111,9 @@
     "hideHeaderDenomination": true,
     "_comment": " "
   },
-  "distributionCoverageByDistrictBurundi" : {
+  "distributionCoverageByDistrictBurundi": {
     "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_BY_DISTRICT_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -9134,9 +9139,9 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageByDistrictPercentBurundi" : {
-    "chartName" : "DSS_HEALTH_DISTRIBUTION_COVERAGE_BY_DISTRICT_PERCENT_BURUNDI",
-    "queries" : [
+  "distributionCoverageByDistrictPercentBurundi": {
+    "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_BY_DISTRICT_PERCENT_BURUNDI",
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -9172,10 +9177,10 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageByMunicipalityBurundi" : {
+  "distributionCoverageByMunicipalityBurundi": {
     "kind": "drillDown",
     "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_BY_MUNICIPALITY_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -9201,10 +9206,10 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageByMunicipalityPercentBurundi" : {
+  "distributionCoverageByMunicipalityPercentBurundi": {
     "kind": "drillDown",
-    "chartName" : "DSS_HEALTH_DISTRIBUTION_COVERAGE_BY_MUNICIPALITY_PERCENT_BURUNDI",
-    "queries" : [
+    "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_BY_MUNICIPALITY_PERCENT_BURUNDI",
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -9240,10 +9245,10 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageByAreaOfResponsibilityBurundi" : {
+  "distributionCoverageByAreaOfResponsibilityBurundi": {
     "kind": "drillDown",
     "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_BY_AREA_OF_RESPONSIBILITY_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -9269,10 +9274,10 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageByAreaOfResponsibilityPercentBurundi" : {
+  "distributionCoverageByAreaOfResponsibilityPercentBurundi": {
     "kind": "drillDown",
-    "chartName" : "DSS_HEALTH_DISTRIBUTION_COVERAGE_BY_AREA_OF_RESPONSIBILITY_PERCENT_BURUNDI",
-    "queries" : [
+    "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_BY_AREA_OF_RESPONSIBILITY_PERCENT_BURUNDI",
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -9308,10 +9313,10 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageByHillsBurundi" : {
+  "distributionCoverageByHillsBurundi": {
     "kind": "drillDown",
     "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_BY_HILLS_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -9337,10 +9342,10 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageByHillsPercentBurundi" : {
+  "distributionCoverageByHillsPercentBurundi": {
     "kind": "drillDown",
-    "chartName" : "DSS_HEALTH_DISTRIBUTION_COVERAGE_BY_HILLS_PERCENT_BURUNDI",
-    "queries" : [
+    "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_BY_HILLS_PERCENT_BURUNDI",
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -9376,10 +9381,10 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageBySubHillsBurundi" : {
+  "distributionCoverageBySubHillsBurundi": {
     "kind": "drillDown",
     "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_BY_HILLS_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -9405,10 +9410,10 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageBySubHillsPercentBurundi" : {
+  "distributionCoverageBySubHillsPercentBurundi": {
     "kind": "drillDown",
-    "chartName" : "DSS_HEALTH_DISTRIBUTION_COVERAGE_BY_SUBHILLS_PERCENT_BURUNDI",
-    "queries" : [
+    "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_BY_SUBHILLS_PERCENT_BURUNDI",
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -9628,7 +9633,7 @@
     "hideHeaderDenomination": true,
     "_comment": " "
   },
-  "populationCoveredDistributionDistrictBurundi" : {
+  "populationCoveredDistributionDistrictBurundi": {
     "chartName": "DSS_HEALTH_POPULATION_COVERED_DISTRIBUTION_DISTRICT_BURUNDI",
     "queries": [
       {
@@ -9658,7 +9663,7 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredDistributionDistrictPercentageBurundi" : {
+  "populationCoveredDistributionDistrictPercentageBurundi": {
     "chartName": "DSS_HEALTH_POPULATION_COVERED_DISTRIBUTION_DISTRICT_PERCENTAGE_BURUNDI",
     "queries": [
       {
@@ -9696,10 +9701,9 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredDistributionMunicipalityBurundi" : {
+  "populationCoveredDistributionMunicipalityBurundi": {
     "chartName": "DSS_HEALTH_POPULATION_COVERED_DISTRIBUTION_MUNICIPALITY_BURUNDI",
     "queries": [
-
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -9727,7 +9731,7 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredDistributionMunicipalityPercentageBurundi" : {
+  "populationCoveredDistributionMunicipalityPercentageBurundi": {
     "chartName": "DSS_HEALTH_POPULATION_COVERED_DISTRIBUTION_MUNICIPALITY_PERCENTAGE_BURUNDI",
     "queries": [
       {
@@ -9765,7 +9769,7 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredDistributionAreaOfResponsibilityBurundi" : {
+  "populationCoveredDistributionAreaOfResponsibilityBurundi": {
     "chartName": "DSS_HEALTH_POPULATION_COVERED_DISTRIBUTION_AREA_OF_RESPONSIBILITY_BURUNDI",
     "queries": [
       {
@@ -9795,7 +9799,7 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredDistributionAreaOfResponsibilityPercentageBurundi" : {
+  "populationCoveredDistributionAreaOfResponsibilityPercentageBurundi": {
     "chartName": "DSS_HEALTH_POPULATION_COVERED_DISTRIBUTION_AREA_OF_RESPONSIBILITY_PERCENTAGE_BURUNDI",
     "queries": [
       {
@@ -9833,7 +9837,7 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredDistributionHillsBurundi" : {
+  "populationCoveredDistributionHillsBurundi": {
     "chartName": "DSS_HEALTH_POPULATION_COVERED_DISTRIBUTION_HILLS_BURUNDI",
     "queries": [
       {
@@ -9863,7 +9867,7 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredDistributionHillsPercentageBurundi" : {
+  "populationCoveredDistributionHillsPercentageBurundi": {
     "chartName": "DSS_HEALTH_POPULATION_COVERED_DISTRIBUTION_HILLS_PERCENTAGE_BURUNDI",
     "queries": [
       {
@@ -9901,7 +9905,7 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredDistributionSubHillsBurundi" : {
+  "populationCoveredDistributionSubHillsBurundi": {
     "chartName": "DSS_HEALTH_POPULATION_COVERED_DISTRIBUTION_SUBHILLS_BURUNDI",
     "queries": [
       {
@@ -9931,7 +9935,7 @@
     "insight": {},
     "_comment": " "
   },
-  "populationCoveredDistributionSubHillsPercentageBurundi" : {
+  "populationCoveredDistributionSubHillsPercentageBurundi": {
     "chartName": "DSS_HEALTH_POPULATION_COVERED_DISTRIBUTION_SUBHILLS_PERCENTAGE_BURUNDI",
     "queries": [
       {
@@ -12034,7 +12038,7 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageSpecialGroupsPercentDistrictBurundi" : {
+  "distributionCoverageSpecialGroupsPercentDistrictBurundi": {
     "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_SPECIAL_GROUPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -12112,7 +12116,7 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageSpecialGroupsPercentMunicipalityBurundi" : {
+  "distributionCoverageSpecialGroupsPercentMunicipalityBurundi": {
     "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_SPECIAL_GROUPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -12190,7 +12194,7 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageSpecialGroupsPercentAreaOfResponsibilityBurundi" : {
+  "distributionCoverageSpecialGroupsPercentAreaOfResponsibilityBurundi": {
     "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_SPECIAL_GROUPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -12268,7 +12272,7 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageSpecialGroupsPercentHillsBurundi" : {
+  "distributionCoverageSpecialGroupsPercentHillsBurundi": {
     "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_SPECIAL_GROUPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -12346,7 +12350,7 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageSpecialGroupsPercentSubHillsBurundi" : {
+  "distributionCoverageSpecialGroupsPercentSubHillsBurundi": {
     "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_SPECIAL_GROUPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -12424,7 +12428,7 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageRefugeeCampsPercentDistrictBurundi" : {
+  "distributionCoverageRefugeeCampsPercentDistrictBurundi": {
     "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_REFUGEE_CAMPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -12488,7 +12492,7 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageRefugeeCampsPercentMunicipalityBurundi" : {
+  "distributionCoverageRefugeeCampsPercentMunicipalityBurundi": {
     "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_REFUGEE_CAMPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -12552,7 +12556,7 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageRefugeeCampsPercentAreaOfResponsibilityBurundi" : {
+  "distributionCoverageRefugeeCampsPercentAreaOfResponsibilityBurundi": {
     "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_REFUGEE_CAMPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -12616,7 +12620,7 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageRefugeeCampsPercentHillsBurundi" : {
+  "distributionCoverageRefugeeCampsPercentHillsBurundi": {
     "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_REFUGEE_CAMPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -12680,7 +12684,7 @@
     "insight": {},
     "_comment": " "
   },
-  "distributionCoverageRefugeeCampsPercentSubHillsBurundi" : {
+  "distributionCoverageRefugeeCampsPercentSubHillsBurundi": {
     "chartName": "DSS_HEALTH_DISTRIBUTION_COVERAGE_REFUGEE_CAMPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -12744,7 +12748,7 @@
     "insight": {},
     "_comment": " "
   },
-  "bednetDistributionCoverageSpecialGroupsPercentDistrictBurundi" : {
+  "bednetDistributionCoverageSpecialGroupsPercentDistrictBurundi": {
     "chartName": "DSS_HEALTH_BEDNET_DISTRIBUTION_COVERAGE_SPECIAL_GROUPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -12822,7 +12826,7 @@
     "insight": {},
     "_comment": " "
   },
-  "bednetDistributionCoverageSpecialGroupsPercentMunicipalityBurundi" : {
+  "bednetDistributionCoverageSpecialGroupsPercentMunicipalityBurundi": {
     "chartName": "DSS_HEALTH_BEDNET_DISTRIBUTION_COVERAGE_SPECIAL_GROUPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -12900,7 +12904,7 @@
     "insight": {},
     "_comment": " "
   },
-  "bednetDistributionCoverageSpecialGroupsPercentAreaOfResponsibilityBurundi" : {
+  "bednetDistributionCoverageSpecialGroupsPercentAreaOfResponsibilityBurundi": {
     "chartName": "DSS_HEALTH_BEDNET_DISTRIBUTION_COVERAGE_SPECIAL_GROUPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -12978,7 +12982,7 @@
     "insight": {},
     "_comment": " "
   },
-  "bednetDistributionCoverageSpecialGroupsPercentHillsBurundi" : {
+  "bednetDistributionCoverageSpecialGroupsPercentHillsBurundi": {
     "chartName": "DSS_HEALTH_BEDNET_DISTRIBUTION_COVERAGE_SPECIAL_GROUPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -13056,7 +13060,7 @@
     "insight": {},
     "_comment": " "
   },
-  "bednetDistributionCoverageSpecialGroupsPercentSubHillsBurundi" : {
+  "bednetDistributionCoverageSpecialGroupsPercentSubHillsBurundi": {
     "chartName": "DSS_HEALTH_BEDNET_DISTRIBUTION_COVERAGE_SPECIAL_GROUPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -13134,7 +13138,7 @@
     "insight": {},
     "_comment": " "
   },
-  "bednetDistributionCoverageRefugeeCampsPercentDistrictBurundi" : {
+  "bednetDistributionCoverageRefugeeCampsPercentDistrictBurundi": {
     "chartName": "DSS_HEALTH_BEDNET_DISTRIBUTION_COVERAGE_REFUGEE_CAMPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -13212,7 +13216,7 @@
     "insight": {},
     "_comment": " "
   },
-  "bednetDistributionCoverageRefugeeCampsPercentMunicipalityBurundi" : {
+  "bednetDistributionCoverageRefugeeCampsPercentMunicipalityBurundi": {
     "chartName": "DSS_HEALTH_BEDNET_DISTRIBUTION_COVERAGE_REFUGEE_CAMPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -13290,7 +13294,7 @@
     "insight": {},
     "_comment": " "
   },
-  "bednetDistributionCoverageRefugeeCampsPercentAreaOfResponsibilityBurundi" : {
+  "bednetDistributionCoverageRefugeeCampsPercentAreaOfResponsibilityBurundi": {
     "chartName": "DSS_HEALTH_BEDNET_DISTRIBUTION_COVERAGE_REFUGEE_CAMPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -13368,7 +13372,7 @@
     "insight": {},
     "_comment": " "
   },
-  "bednetDistributionCoverageRefugeeCampsPercentHillsBurundi" : {
+  "bednetDistributionCoverageRefugeeCampsPercentHillsBurundi": {
     "chartName": "DSS_HEALTH_BEDNET_DISTRIBUTION_COVERAGE_REFUGEE_CAMPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -13446,7 +13450,7 @@
     "insight": {},
     "_comment": " "
   },
-  "bednetDistributionCoverageRefugeeCampsPercentSubHillsBurundi" : {
+  "bednetDistributionCoverageRefugeeCampsPercentSubHillsBurundi": {
     "chartName": "DSS_HEALTH_BEDNET_DISTRIBUTION_COVERAGE_REFUGEE_CAMPS_PERCENT_BURUNDI",
     "queries": [
       {
@@ -13784,7 +13788,7 @@
     "insight": {},
     "_comment": " "
   },
-  "totalHHRegisteredUnderRefugeeCamps" : {
+  "totalHHRegisteredUnderRefugeeCamps": {
     "chartName": "DSS_HEALTH_NATIONAL_TOTAL_HH_IN_REFUGEE_CAMPS",
     "queries": [
       {
@@ -13806,7 +13810,7 @@
     "insight": {},
     "_comment": " "
   },
-  "totalPopulationRegisteredUnderRefugeeCamps" : {
+  "totalPopulationRegisteredUnderRefugeeCamps": {
     "chartName": "DSS_HEALTH_NATIONAL_TOTAL_POPULATION_IN_REFUGEE_CAMPS",
     "queries": [
       {
@@ -13872,9 +13876,9 @@
     "insight": {},
     "_comment": " "
   },
-  "refusalCasesDistrictBurundi" : {
+  "refusalCasesDistrictBurundi": {
     "chartName": "DSS_HEALTH_REFUSAL_CASES_DISTRICT_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -13900,7 +13904,7 @@
     "insight": {},
     "_comment": " "
   },
-  "refusalCasesDistrictPercentBurundi" : {
+  "refusalCasesDistrictPercentBurundi": {
     "chartName": "DSS_HEALTH_REFUSAL_CASES_DISTRICT_PERCENTAGE_BURUNDI",
     "queries": [
       {
@@ -13938,10 +13942,10 @@
     "insight": {},
     "_comment": " "
   },
-  "refusalCasesMunicipalityBurundi" : {
-    "kind" :"drillDown",
+  "refusalCasesMunicipalityBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_REFUSAL_CASES_MUNICIPALITY_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -13967,8 +13971,8 @@
     "insight": {},
     "_comment": " "
   },
-  "refusalCasesMunicipalityPercentBurundi" : {
-    "kind" :"drillDown",
+  "refusalCasesMunicipalityPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_REFUSAL_CASES_MUNICIPALITY_PERCENTAGE_BURUNDI",
     "queries": [
       {
@@ -14006,10 +14010,10 @@
     "insight": {},
     "_comment": " "
   },
-  "refusalCasesAreaOfResponsibilityBurundi" : {
-    "kind" :"drillDown",
+  "refusalCasesAreaOfResponsibilityBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_REFUSAL_CASES_AREA_OF_RESPONSIBILITY_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -14035,8 +14039,8 @@
     "insight": {},
     "_comment": " "
   },
-  "refusalCasesAreaOfResponsibilityPercentBurundi" : {
-    "kind" :"drillDown",
+  "refusalCasesAreaOfResponsibilityPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_REFUSAL_CASES_AREA_OF_RESPONSIBILITY_PERCENTAGE_BURUNDI",
     "queries": [
       {
@@ -14074,10 +14078,10 @@
     "insight": {},
     "_comment": " "
   },
-  "refusalCasesHillsBurundi" : {
-    "kind" :"drillDown",
+  "refusalCasesHillsBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_REFUSAL_CASES_HILLS_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -14103,8 +14107,8 @@
     "insight": {},
     "_comment": " "
   },
-  "refusalCasesHillsPercentBurundi" : {
-    "kind" :"drillDown",
+  "refusalCasesHillsPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_REFUSAL_CASES_HILLS_PERCENTAGE_BURUNDI",
     "queries": [
       {
@@ -14142,10 +14146,10 @@
     "insight": {},
     "_comment": " "
   },
-  "refusalCasesSubHillsBurundi" : {
-    "kind" :"drillDown",
+  "refusalCasesSubHillsBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_REFUSAL_CASES_SUBHILLS_BURUNDI",
-    "queries" : [
+    "queries": [
       {
         "module": "COMMON",
         "dateRefField": "Data.createdTime",
@@ -14171,8 +14175,8 @@
     "insight": {},
     "_comment": " "
   },
-  "refusalCasesSubHillsPercentBurundi" : {
-    "kind" :"drillDown",
+  "refusalCasesSubHillsPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_REFUSAL_CASES_SUBHILLS_PERCENTAGE_BURUNDI",
     "queries": [
       {
@@ -14210,7 +14214,7 @@
     "insight": {},
     "_comment": " "
   },
-  "uniqueVsTotalUsersInBillDistrictBurundi" : {
+  "uniqueVsTotalUsersInBillDistrictBurundi": {
     "chartName": "DSS_HEALTH_UNIQUE_VS_TOTAL_USERS_IN_BILL_BURUNDI",
     "queries": [
       {
@@ -14231,7 +14235,7 @@
       "Unique users",
       "Total users"
     ],
-    "plotLabel" : "none",
+    "plotLabel": "none",
     "filterKeys": [
       {
         "key": "district"
@@ -14240,7 +14244,7 @@
     "insight": {},
     "_comment": ""
   },
-  "uniqueVsTotalUsersInBillMunicipalityBurundi" : {
+  "uniqueVsTotalUsersInBillMunicipalityBurundi": {
     "chartName": "DSS_HEALTH_UNIQUE_VS_TOTAL_USERS_IN_BILL_BURUNDI",
     "queries": [
       {
@@ -14261,7 +14265,7 @@
       "Unique users",
       "Total users"
     ],
-    "plotLabel" : "none",
+    "plotLabel": "none",
     "filterKeys": [
       {
         "key": "municipality"
@@ -14270,7 +14274,7 @@
     "insight": {},
     "_comment": ""
   },
-  "attendanceDistrictPercentageBurundi" : {
+  "attendanceDistrictPercentageBurundi": {
     "chartName": "DSS_HEALTH_ATTENDANCE_DISTRICT_PERCENT",
     "queries": [
       {
@@ -14307,8 +14311,8 @@
       }
     ]
   },
-  "attendanceMunicipalityPercentBurundi" : {
-    "kind" : "drillDown",
+  "attendanceMunicipalityPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_ATTENDANCE_MUNICIPALITY_PERCENT",
     "queries": [
       {
@@ -14345,8 +14349,8 @@
       }
     ]
   },
-  "attendanceAreaOfResponsibilityPercentBurundi" : {
-    "kind" : "drillDown",
+  "attendanceAreaOfResponsibilityPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_ATTENDANCE_AREA_OF_RESPONSIBILITY_PERCENT",
     "queries": [
       {
@@ -14383,8 +14387,8 @@
       }
     ]
   },
-  "attendanceHillsPercentBurundi" : {
-    "kind" : "drillDown",
+  "attendanceHillsPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_ATTENDANCE_HILLS_PERCENT",
     "queries": [
       {
@@ -14421,8 +14425,8 @@
       }
     ]
   },
-  "attendanceSubHillsPercentBurundi" : {
-    "kind" : "drillDown",
+  "attendanceSubHillsPercentBurundi": {
+    "kind": "drillDown",
     "chartName": "DSS_HEALTH_ATTENDANCE_SUB_HILLS_PERCENT",
     "queries": [
       {
@@ -14458,5 +14462,34 @@
         "key": "subHills"
       }
     ]
+  },
+  "testUserPerformance": {
+    "chartName": "DSS_HEALTH_COMPLAINTS_BY_HEALTH_DISTRICT_TOTAL_BURUNDI",
+    "queries": [
+      {
+        "module": "COMMON",
+        "dateRefField": "Data.household.clientAuditDetails.lastModifiedTime",
+        "requestQueryMap": "{\"projectId\": \"Data.additionalDetails.projectId.keyword\", \"createdBy\": \"Data.household.clientAuditDetails.createdBy.keyword\"}",
+        "indexName": "household-index-v1",
+        "aggrQuery": "{\"size\":0,\"aggs\":{\"Users\":{\"terms\":{\"field\":\"Data.household.clientAuditDetails.createdBy.keyword\",\"size\":5000},\"aggs\":{\"daily_users\":{\"date_histogram\":{\"field\":\"Data.@timestamp\",\"calendar_interval\":\"day\",\"min_doc_count\":1},\"aggs\":{\"total_registrations\":{\"value_count\":{\"field\":\"Data.household.id.keyword\"}}}}}}}}"
+      }
+    ],
+    "chartType": "line",
+    "isCumulative": false,
+    "valueType": "number",
+    "showLabel": true,
+    "drillChart": "none",
+    "filterKeys": [
+      {
+        "key": "Users"
+      }
+    ],
+    "documentType": "_doc",
+    "action": "",
+    "aggregationPaths": [
+      "Users"
+    ],
+    "insight": {},
+    "_comment": " "
   }
 }
